@@ -1,0 +1,52 @@
+/* Estilizando o corpo (body) da página */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Fundo com gradiente */
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centralizando horizontalmente */
+    align-items: center; /* Centralizando verticalmente */
+    height: 100vh; /* Altura da tela inteira */
+    margin: 0; /* Removendo margens padrão */
+}
+
+/* Estilizando o contêiner principal */
+.container {
+    background-color: white; /* Cor de fundo branca */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+    text-align: center; /* Centralizando o texto */
+    max-width: 500px; /* Largura máxima */
+    width: 100%; /* Largura total */
+}
+
+/* Estilizando o cabeçalho */
+h1 {
+    color: #333; /* Cor do texto */
+    font-size: 2.5em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilizando os parágrafos */
+p {
+    color: #666; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilizando o botão */
+.btn {
+    display: inline-block; /* Exibindo como bloco em linha */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #2575fc; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Removendo sublinhado */
+    font-size: 1em; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+/* Estilizando o botão ao passar o mouse */
+.btn:hover {
+    background-color: #6a11cb; /* Mudando a cor de fundo ao passar o mouse */
+}
