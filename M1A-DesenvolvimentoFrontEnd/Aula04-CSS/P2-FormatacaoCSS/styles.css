@@ -1,0 +1,96 @@
+/* 
+Uma regra CSS é composta por um seletor e um bloco de declaração. 
+
+ESTRUTURA BASICA DE UM REGRA CSS 
+    selector {
+        propriedade1: valor1;
+        propriedade2: valor2;
+    } 
+
+Componentes de uma Regra CSS
+1. Seletor
+2. Propriedades e Valores
+3. Cascata e Herança
+
+1. Seletores
+Seletores são usados para "selecionar" os elementos HTML que você deseja estilizar. 
+Eles indicam quais partes do HTML serão afetadas pelos estilos definidos.
+Tipos de Seletores:
+    1.1.Seletores de Tipo: Selecionam todos os elementos de um tipo específico.
+    p {
+        color: blue;
+    }
+    1.2.Seletores de Classe: Selecionam elementos que possuem uma determinada classe.
+    .minha-classe {
+        color: red;
+    }
+    1.3.Seletores de ID: Selecionam um elemento único com um ID específico. 
+    #meu-id {
+        color: green;
+    }
+2. Propriedades e Valores
+Propriedades são características específicas que você deseja estilizar, como cor, fonte, tamanho, margens, etc.    
+Valores são as configurações atribuídas a essas propriedades.
+    p {
+        color: blue; Propriedade: color, Valor: blue 
+        font-size: 16px; Propriedade: font-size, Valor: 16px 
+    }
+3. Cascata e Herança
+A cascata se refere à maneira como o CSS aplica múltiplas regras de estilo, onde a ordem importa. 
+Regras mais específicas ou mais recentes podem substituir regras anteriores ou mais gerais.
+
+Herança refere-se ao fato de que alguns estilos aplicados a elementos pai podem ser herdados por seus filhos. 
+Por exemplo, se você definir a cor do texto para o corpo da página (<body>), essa cor será herdada por todos os elementos filhos, a menos que seja especificamente substituída.
+    body {
+        color: black; Todos os textos no body herdarão esta cor 
+    }
+
+    p {
+        color: red; Isso sobrescreverá a cor preta nos parágrafos 
+    }
+
+*/
+
+/* Definindo estilos básicos para a página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para a página */
+    background-color: #f4f4f4; /* Define a cor de fundo da página */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 20px; /* Adiciona um preenchimento ao redor do conteúdo da página */
+}
+
+
+/* Estilos para o contêiner principal */
+.container {
+    background-color: #fff; /* Define a cor de fundo do contêiner como branco */
+    padding: 20px; /* Adiciona um preenchimento interno ao contêiner */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    width: 80%; /* Define a largura do contêiner como 80% da largura da janela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
+}
+
+
+/* Estilos para o título */
+h1 {
+    color: #333; /* Define a cor do texto do título */
+    text-align: center; /* Centraliza o título */
+}
+
+
+/* Estilos para o parágrafo */
+p {
+    color: #666; /* Define a cor do texto do parágrafo */
+    line-height: 1.6; /* Define a altura da linha para melhorar a legibilidade */
+}
+
+
+/* Estilos para a caixa de exemplo */
+.box {
+    background-color: #007bff; /* Define a cor de fundo da caixa */
+    color: #fff; /* Define a cor do texto da caixa */
+    padding: 20px; /* Adiciona um preenchimento interno à caixa */
+    margin: 20px 0; /* Adiciona uma margem em cima e embaixo da caixa */
+    border: 2px solid #0056b3; /* Define uma borda de 2px ao redor da caixa */
+    border-radius: 5px; /* Arredonda os cantos da borda */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}

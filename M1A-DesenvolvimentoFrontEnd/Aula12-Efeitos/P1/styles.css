@@ -1,0 +1,30 @@
+/* Definindo o estilo geral para o body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilizando a div com a classe 'box' */
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* Aplicando a rotação inicial */
+    transition: transform 0.5s ease;
+}
+
+/* Adicionando um efeito de rotação ao passar o mouse sobre a div */
+.box:hover {
+    transform: rotate(45deg);
+}

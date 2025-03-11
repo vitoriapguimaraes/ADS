@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site Dinâmico - HTML</title>
+        <link rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 2em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        #eventoSection {
+            padding: 1em;
+            border: 1px solid #ccc;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Site dinâmico em HTML</h1>
+            <nav>
+                <a href="#apresentacao" class="text-white">Apresentação</a> |
+                <a href="#estruturacao" class="text-white">Estruturação</a> |
+                <a href="#formulario" class="text-white">Formulário</a> |
+                <a href="#multimidia" class="text-white">Multimídia</a> |
+                <a href="#eventos" class="text-white">Eventos</a>
+            </nav>        
+        </header>
+    
+        <main>
+            <section id="apresentacao">
+                <h2>Apresentação de Conteúdo</h2>
+                <p>HTML permite apresentar uma variedade de tipos de conteúdo,
+                     como texto, imagens, vídeos, e áudio.</p>
+            </section>
+        
+            <section id="estruturacao">
+                <h2>Estruturação de Conteúdo</h2>
+                <p>HTML oferece uma série de elementos semânticos (por exemplo,
+                     <code>&lt;header&gt;</code>,
+                      <code>&lt;nav&gt;</code>,
+                       <code>&lt;main&gt;</code>,
+                        <code>&lt;section&gt;</code>,
+                         <code>&lt;article&gt;</code>,
+                          <code>&lt;footer&gt;</code>).</p>
+            </section>
+
+            <section id="formulario">
+                <h2>Formulários</h2>
+                <form name="contatoForm">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" class="form-control" name="email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-secondary">Redefinir</button>
+                </form>
+            </section>
+        
+            <section id="multimidia">
+                <h2>Multimídia</h2>
+                <h3>Imagem</h3>
+                <img src="https://via.placeholder.com/150" alt="Exemplo de Imagem" class="img-fluid">
+                <h3>Vídeo</h3>
+                <video controls class="w-25">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h3>Áudio</h3>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </section>
+
+            <section id="eventos">
+                <h2>Eventos</h2>
+                <div id="eventoSection">
+                    <button id="clickButton" class="btn btn-secondary">Clique aqui</button>
+                    <div id="mouseOverOutDiv"
+                        style="height: 50px; width: 100px;
+                         background-color: lightblue; margin-top: 1em;">
+                        Passe o mouse aqui</div>        
+                    <button id="mouseDownUpButton" class="btn btn-secondary"
+                        style="margin-top: 1em;">Pressione e solte</button>
+                    
+                    <input type="text" id="keyInput" 
+                        class="form-control" placeholder="Pressione uma tecla" style="margin-top: 1em;">
+
+                    <input type="text" id="focusBlurInput" class="form-control"
+                        placeholder="Clique aqui e depois saia" style="margin-top: 1em;">
+                </div>        
+            </section>
+    
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Exemplo de Página HTML</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+            // Usando getElementById()
+            const apresentacaoSection = document.getElementById('apresentacao');
+            apresentacaoSection.style.backgroundColor = '#f0f0f0';
+        
+            // Usando getElementsByClassName()
+            const textWhiteElements = document.getElementsByClassName('text-white');
+            for (let i = 0; i < textWhiteElements.length; i++) {
+                textWhiteElements[i].className = 'blue';
+            }
+        
+            // Usando getElementsByTagName()
+            const sectionElements = document.getElementsByTagName('section');
+            for (let i = 0; i < sectionElements.length; i++) {
+                sectionElements[i].style.border = '1px solid #ccc';
+            }
+        
+            // Usando getElementsByName()
+            const emailInput = document.getElementsByName('email')[0];
+            emailInput.placeholder = 'Digite seu email aqui';
+
+            // Criando um novo elemento
+            const newDiv = document.createElement('div');
+            
+            // Definindo atributos para o novo elemento
+            newDiv.setAttribute('class', 'alert alert-info');
+            newDiv.setAttribute('role', 'alert');
+            
+            // Adicionando conteúdo ao novo elemento
+            newDiv.textContent = 'Este é um novo alerta criado dinamicamente!';
+            
+            // Adicionando o novo elemento ao DOM
+            document.body.appendChild(newDiv);
+
+            // Manipulação de Estilos (CSS)
+            const mainContent = document.querySelector('main');
+            mainContent.style.padding = '5em';
+            mainContent.style.backgroundColor = '#e0e0e0';
+
+            // Manipulação de Conteúdo
+            const h1Element = document.querySelector('h1');
+            h1Element.textContent = 'Título Atualizado Dinamicamente';
+
+            // Manipulação de Atributos
+            const imgElement = document.querySelector('img');
+            imgElement.setAttribute('alt', 'Imagem de Exemplo Atualizada');
+            imgElement.setAttribute('src', 'https://via.placeholder.com/200');
+
+            // Manipulação de Eventos
+            const submitButton = document.querySelector('button[type="submit"]');
+            submitButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert('Formulário enviado!');
+            });
+
+            // Navegação no DOM
+            const secondSection = document.querySelectorAll('section')[1];
+            const nextSection = secondSection.nextElementSibling;
+            if (nextSection) {
+                nextSection.style.border = '2px dashed #000';
+            }
+
+            // Remoção de Elementos
+            const footerElement = document.querySelector('footer');
+            footerElement.remove();
+
+            // Eventos de Clique
+            const clickButton = document.getElementById('clickButton');
+            clickButton.addEventListener('click', function() {
+                alert('Botão clicado!');
+            });
+
+            // Eventos de Mouseover e Mouseout
+            const mouseOverOutDiv = document.getElementById('mouseOverOutDiv');
+            mouseOverOutDiv.addEventListener('mouseover', function() {
+                mouseOverOutDiv.style.backgroundColor = 'lightgreen';
+            });
+            
+            mouseOverOutDiv.addEventListener('mouseout', function() {
+                mouseOverOutDiv.style.backgroundColor = 'lightblue';
+            });
+
+            // Eventos de Mousedown e Mouseup
+            const mouseDownUpButton = document.getElementById('mouseDownUpButton');
+            mouseDownUpButton.addEventListener('mousedown', function() {
+                mouseDownUpButton.textContent = 'Botão pressionado';
+            });
+            
+            mouseDownUpButton.addEventListener('mouseup', function() {
+                mouseDownUpButton.textContent = 'Pressione e solte';
+            });
+
+            // Eventos de Teclado
+            const keyInput = document.getElementById('keyInput');
+            keyInput.addEventListener('keydown', function(event) {
+                console.log('Tecla pressionada:', event.key);
+            });
+            
+            keyInput.addEventListener('keyup', function(event) {
+                console.log('Tecla liberada:', event.key);
+            });
+            
+            keyInput.addEventListener('keypress', function(event) {
+                console.log('Tecla que produz caractere pressionada:', event.key);
+            });
+
+            // Eventos de Envio de Formulário (submit)
+            const contatoForm = document.forms['contatoForm'];
+            contatoForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Formulário enviado com sucesso!');
+            });
+
+            // Eventos de Clique em Botão (click)
+            const clickExampleButton = document.getElementById('clickButton');
+            clickExampleButton.addEventListener('click', function() {
+                alert('Botão de clique acionado!');
+            });
+            
+            // Eventos de Redefinição de Formulário (reset)
+            const resetButton = document.querySelector('button[type="reset"]');
+            resetButton.addEventListener('click', function() {
+                alert('Formulário redefinido!');
+            });
+
+             // Eventos de Foco
+             const focusBlurInput = document.getElementById('focusBlurInput');
+             focusBlurInput.addEventListener('focus', function() {
+                focusBlurInput.style.backgroundColor = 'lightyellow';
+            });
+
+            focusBlurInput.addEventListener('blur', function() {
+                focusBlurInput.style.backgroundColor = 'white';
+            });
+
+            // Eventos de Tempo
+            setTimeout(function() {
+                alert('Este alerta aparece após 3 segundos!');
+            }, 3000);
+
+            setInterval(function() {
+                console.log('Este log aparece a cada 5 segundos');
+            }, 5000);
+            
+        </script>
+    </body>
+</html>

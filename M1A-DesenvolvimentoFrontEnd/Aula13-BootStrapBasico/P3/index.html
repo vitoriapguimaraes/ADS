@@ -1,0 +1,37 @@
+<!--
+    CONCEITO
+
+    O sistema de grid (grade) do Bootstrap é uma maneira de organizar o layout da sua página em uma estrutura de colunas e linhas. 
+    Ele facilita a criação de layouts responsivos, que se ajustam automaticamente a diferentes tamanhos de tela (desktop, tablet, celular).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Exemplo de Grid do Bootstrap</title>
+    <!-- Inclui o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inclui o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Exemplo de Grid do Bootstrap</h1>
+        <!-- Sistema de grid do Bootstrap -->
+        <div class="row">
+            <!-- Coluna que ocupa 4 colunas em telas pequenas, 6 colunas em telas médias e 4 colunas em telas grandes -->
+            <div class="col-sm-4 col-md-6 col-lg-4 box">Coluna 1</div>
+            <!-- Coluna que ocupa 4 colunas em telas pequenas, 6 colunas em telas médias e 4 colunas em telas grandes -->
+            <div class="col-sm-4 col-md-6 col-lg-4 box">Coluna 2</div>
+            <!-- Coluna que ocupa 4 colunas em telas pequenas, 12 colunas em telas médias e 4 colunas em telas grandes -->
+            <div class="col-sm-4 col-md-12 col-lg-4 box">Coluna 3</div>
+        </div>
+    </div>
+    <!-- Inclui o JavaScript do Bootstrap e suas dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

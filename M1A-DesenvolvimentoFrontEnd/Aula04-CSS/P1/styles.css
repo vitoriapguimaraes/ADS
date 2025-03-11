@@ -1,0 +1,76 @@
+/* CSS, ou Cascading Style Sheets (Folhas de Estilo em Cascata), é uma linguagem utilizada para descrever a apresentação de um documento escrito em HTML. */
+/* A palavra "cascading" refere-se à maneira como as regras de estilo são aplicadas de acordo com a hierarquia e a especificidade. */
+/* CSS utiliza seletores para "alcançar" os elementos HTML que precisam ser estilizados. */
+/* Existem vários tipos de seletores, incluindo seletores de tipo, de classe, de ID, de atributo, pseudoclasses e pseudoelementos.*/
+
+/* CSS define estilos usando pares de propriedade e valor. */
+/* Por exemplo, para definir a cor de texto de um parágrafo, você pode usar a propriedade color com um valor especificado: color: blue;.*/ 
+
+    /* ESTRUTURA BASICA DE UM REGRA CSS 
+    selector {
+        propriedade1: valor1;
+        propriedade2: valor2;
+    } */
+
+
+/* Definição de estilos CSS */
+
+/* Define a cor de fundo do corpo do documento e a fonte padrão */
+body {
+    background-color: #f0f0f0; /* Cinza claro */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    margin: 0; /* Remove todas as margens externas do <body> */
+    padding: 0; /* Remove todo o padding interno do <body> */
+    /* O que é padding? */
+        /* Imagine que você tem uma foto que você quer colocar em um porta-retratos. */
+        /* Quando você coloca a foto no porta-retratos, pode haver um espaço entre a borda do porta-retratos e a própria foto. */
+        /* Esse espaço extra ao redor da foto é como o padding em CSS. */
+}
+
+/* Define o estilo do cabeçalho */
+header {
+    background-color: #333; /* Cinza escuro */
+    color: white; /* Texto branco */
+    padding: 10px;
+    text-align: center; /* Centraliza o texto */
+    /* O que é pixel? */
+        /* Pixel: A menor unidade de uma imagem digital, como uma peça de quebra-cabeças. */
+        /* Pense em um pixel como um pequeno quadradinho que, junto com muitos outros quadradinhos, forma uma imagem completa. */
+}
+
+/* Define o estilo dos parágrafos */
+p {
+    color: #333; /* Texto cinza escuro */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
+    margin: 10px 20px; /* Margens ao redor do parágrafo */
+}
+
+/* Define o estilo específico para parágrafos com a classe "paragrafo-destaque" */
+.paragrafo-destaque {
+    background-color: #ffeb3b; /* Amarelo claro */
+    padding: 10px;
+    border-left: 5px solid #fbc02d; /* Borda à esquerda */
+}
+
+/* Define o estilo dos links */
+a {
+    color: blue; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estilo para links ao passar o mouse */
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Define o estilo do rodapé */
+footer {
+    background-color: #333; /* Cinza escuro */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px;
+    position: fixed; /* Fixa o rodapé na parte inferior */
+    bottom: 0;
+    width: 100%; /* Largura total */
+}

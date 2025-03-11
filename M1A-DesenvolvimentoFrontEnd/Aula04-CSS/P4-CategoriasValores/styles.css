@@ -1,0 +1,76 @@
+/* Quando estamos falando de CSS, estamos falando de como estilizar elementos em uma página web. 
+   Para fazer isso, usamos "propriedades" e "valores". 
+   Cada propriedade se encaixa em uma categoria específica e cada uma dessas propriedades pode ter diferentes valores.
+   
+Propriedade: Algo que você quer mudar no estilo do elemento (por exemplo, a cor do texto, o tamanho da fonte, a margem ao redor de um elemento).
+Valor: A configuração específica que você dá a essa propriedade (por exemplo, "vermelho" para a cor do texto, "16px" para o tamanho da fonte, "10px" para a margem).
+
+Principais Categorias de Propriedades no CSS
+    1. Propriedades de Texto
+    2. Propriedades de Cor e Fundo
+    3. Propriedades de Layout
+    4. Propriedades de Bordas
+    5. Propriedades de Espaçamento
+    6. Propriedades de Efeito Visual
+
+    1. Propriedades de Texto
+        Estas propriedades controlam a aparência do texto.
+
+    2. Propriedade color
+        Valores: Nomes de cores, valores hexadecimais, valores RGB.
+
+        color: blue; 
+        color: #0000ff;
+        color: rgb(0, 0, 255); */
+
+/* Propriedades de fonte e texto */
+body {
+    font-family: Arial, sans-serif;
+    /* Fonte */
+    color: #333;
+    /* Cor do texto */
+}
+
+/* Propriedades de cor e fundo */
+h1 {
+    color: #4CAF50;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinhamento do texto */
+    background-color: #f0f0f0;
+    /* Cor de fundo */
+    padding: 10px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+}
+
+/* Propriedades de borda e espaçamento */
+.box {
+    width: 300px;
+    /* Largura */
+    padding: 20px;
+    /* Espaçamento interno */
+    border: 2px solid #FF5733;
+    /* Borda */
+    margin: 20px auto;
+    /* Espaçamento externo e centralização */
+    background-color: #FFD700;
+    /* Cor de fundo */
+}
+
+/* Propriedades de alinhamento e decoração */
+.box h2 {
+    text-align: left;
+    /* Alinhamento do texto */
+    text-decoration: underline;
+    /* Decoração do texto */
+}
+
+/* Propriedades de layout */
+p {
+    line-height: 1.6;
+    /* Altura da linha */
+    margin-bottom: 10px;
+    /* Margem inferior */
+}

@@ -1,0 +1,23 @@
+@keyframes mover-caixa {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 1080px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.caixa {
+    width: 200px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: mover-caixa 4s infinite;
+}

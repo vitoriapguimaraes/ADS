@@ -1,0 +1,35 @@
+<!--
+    CONCEITO
+
+    O efeito scale é uma transformação que você pode aplicar a elementos HTML para aumentar ou diminuir o tamanho deles. 
+    Esse efeito é feito usando CSS, a linguagem de estilo usada para definir a aparência das páginas web.
+
+    Para redimensionar um elemento, usamos a propriedade transform junto com o valor scale no CSS. 
+    O valor scale especifica o quanto queremos aumentar ou diminuir o tamanho do elemento.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Exemplo do Efeito Scale</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplo do Efeito Scale</h1>
+        <!-- Botão que receberá o efeito de escala -->
+        <button id="scaleButton">Clique para aumentar</button>
+    </div>
+    <script>
+        // Seleciona o botão pelo ID
+        const button = document.getElementById('scaleButton');
+
+        // Adiciona um evento de clique ao botão
+        button.addEventListener('click', function () {
+            // Adiciona a classe 'scale' ao botão quando ele é clicado
+            button.classList.toggle('scale');
+        });
+    </script>
+</body>
+</html>

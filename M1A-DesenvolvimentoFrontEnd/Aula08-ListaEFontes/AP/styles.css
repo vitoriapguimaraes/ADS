@@ -1,0 +1,11 @@
+h1 {
+    font-family: Arial, sans-serif;
+    color: #4CAF50;
+    font-size: 28px;
+}
+
+.list {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    list-style-type: disc;
+}

@@ -1,0 +1,69 @@
+body {
+    /* Define a fonte do texto como Arial, ou sans-serif se Arial não estiver disponível */
+    font-family: Arial, sans-serif;
+    /* Remove as margens padrão do navegador */
+    margin: 0;
+    /* Remove o preenchimento padrão do navegador */
+    padding: 0;
+    /* Define a cor de fundo da página para um tom de cinza claro */
+    background-color: #f4f4f4;
+    /* Usa o modelo de layout Flexbox para o corpo */
+    display: flex;
+    /* Organiza os elementos filhos em uma coluna vertical */
+    flex-direction: column;
+    /* Centraliza os itens no eixo transversal (horizontal) */
+    align-items: center;
+}
+
+header,
+footer {
+    /* Define a largura do cabeçalho e rodapé para ocupar 100% da largura da página */
+    width: 100%;
+    /* Define a cor de fundo para um tom escuro */
+    background-color: #333;
+    /* Define a cor do texto como branca */
+    color: white;
+    /* Centraliza o texto no centro horizontalmente */
+    text-align: center;
+    /* Adiciona um preenchimento de 1em na parte superior e inferior */
+    padding: 1em 0;
+}
+
+main {
+    /* Permite que o conteúdo principal cresça para ocupar o espaço disponível */
+    flex: 1;
+    /* Usa o modelo de layout Flexbox para o conteúdo principal */
+    display: flex;
+    /* Centraliza os itens no eixo transversal (vertical) */
+    align-items: center;
+    /* Centraliza os itens no eixo principal (horizontal) */
+    justify-content: center;
+    /* Define a largura do conteúdo principal para ocupar 100% da largura da página */
+    width: 100%;
+}
+
+.fixed-container {
+    /* Define uma largura fixa para o contêiner */
+    width: 600px;
+    /* Define a cor de fundo do contêiner como branca */
+    background-color: white;
+    /* Adiciona um preenchimento interno de 20px ao contêiner */
+    padding: 20px;
+    /* Adiciona uma sombra sutil ao redor do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Arredonda os cantos do contêiner */
+    border-radius: 8px;
+    /* Centraliza o texto dentro do contêiner */
+    text-align: center;
+}
+
+h1,
+h2 {
+    /* Remove as margens superiores e inferiores dos títulos */
+    margin: 0 0 20px 0;
+}
+
+p {
+    /* Remove as margens padrão dos parágrafos */
+    margin: 0;
+}

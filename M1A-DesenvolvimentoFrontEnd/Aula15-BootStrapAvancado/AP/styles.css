@@ -1,0 +1,27 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    padding: 2%;
+}
+
+.main {
+    padding: 2%;
+}
+
+.card {
+    width: 18rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+}
+
+.right-content {
+    background-color: rgb(236, 236, 236);
+    padding: 2%;
+}
+
+.newsletter {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}

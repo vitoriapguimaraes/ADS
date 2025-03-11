@@ -1,0 +1,56 @@
+/* O Box Model é um conceito fundamental no design de páginas web que descreve como os elementos HTML são representados como caixas retangulares. 
+   Cada elemento em uma página web é uma "caixa", e o Box Model define as partes dessa caixa e como elas são medidas. */
+/*
++---------------------------+
+|        Margin             |
+|  +---------------------+  |
+|  |      Border         |  |
+|  |  +---------------+  |  |
+|  |  |    Padding    |  |  |
+|  |  |  +---------+  |  |  |
+|  |  |  | Content |  |  |  |
+|  |  |  +---------+  |  |  |
+|  |  +---------------+  |  |
+|  +---------------------+  |
++---------------------------+
+*/
+
+/*
+   Content: O que está dentro da caixa, como texto ou imagens.
+   Padding: Espaço entre o conteúdo e a borda da caixa.
+   Border: A linha ao redor do padding (ou conteúdo se não houver padding).
+   Margin: Espaço fora da borda, separando a caixa de outras caixas.   
+*/
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilo para o título principal */
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+/* Estilo para a caixa demonstrando o Box Model */
+.box {
+    width: 300px;
+    /* Largura da caixa */
+    padding: 20px;
+    /* Espaçamento interno (padding) */
+    border: 5px solid #00a2ff;
+    /* Borda da caixa */
+    margin: 20px auto;
+    /* Espaçamento externo (margin) e centralização */
+    background-color: #b8dfff;
+    /* Cor de fundo */
+}
+
+/* Estilo para o parágrafo dentro da caixa */
+.box p {
+    margin: 0;
+}

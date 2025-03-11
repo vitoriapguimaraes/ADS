@@ -1,0 +1,46 @@
+
+/*
+Componentes de Animações em CSS
+    Keyframes (Quadros-chave)
+    Propriedades de Animação 
+*/
+/* Definindo os keyframes */
+/*
+Keyframes definem os estados intermediários e finais de uma animação. 
+Eles especificam como o estilo de um elemento deve mudar em determinados pontos durante a animação.
+*/
+@keyframes mover-e-mudar-cor {
+    from {
+        background-color: red;
+        transform: translateX(0);
+    }
+    to {
+        background-color: yellow;
+        transform: translateX(100px);
+    }
+}
+
+/* Aplicando a animação ao elemento */
+/*
+As propriedades de animação aplicam a animação definida nos keyframes aos elementos selecionados e controlam aspectos como duração, repetição e tempo de início.
+
+Principais Propriedades de Animação:
+    animation-name: Nome da animação definida nos keyframes.
+    animation-duration: Duração da animação.
+    animation-timing-function: Função de temporização da animação (por exemplo, linear, ease, ease-in, ease-out).
+    animation-delay: Atraso antes de iniciar a animação.
+    animation-iteration-count: Número de vezes que a animação deve se repetir.
+    animation-direction: Direção da animação (normal, reverse, alternate, alternate-reverse).
+    animation-fill-mode: Define o estilo aplicado ao elemento quando a animação não está em execução (antes de começar, depois de terminar).
+    animation-play-state: Permite pausar e retomar a animação.
+*/
+.animacao {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: mover-e-mudar-cor; /* Nome da animação definida nos keyframes.*/
+    animation-duration: 2s; /* Duração da animação. */
+    animation-timing-function: ease-in-out; /* Função de temporização da animação (por exemplo, linear, ease, ease-in, ease-out). */
+    animation-iteration-count: infinite; /* Número de vezes que a animação deve se repetir. */
+    animation-direction: alternate; /* Direção da animação (normal, reverse, alternate, alternate-reverse). */
+}

@@ -1,0 +1,43 @@
+/* Estilizando o body para centralizar o conteúdo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Estilizando o fieldset */
+fieldset {
+    border: 2px solid #007BFF; /* Cor da borda */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+}
+
+/* Estilizando a legenda do fieldset */
+legend {
+    font-weight: bold;
+    color: #007BFF; /* Cor do texto */
+}
+
+/* Estilizando os rótulos (labels) */
+label {
+    display: block; /* Cada label ocupa uma linha inteira */
+    margin-bottom: 10px;
+    color: #333; /* Cor do texto */
+}
+
+/* Estilizando os campos de entrada (input) e o combobox (select) */
+input[type="text"], select {
+    width: 100%; /* Largura total do elemento pai */
+    padding: 8px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 5px; /* Cantos arredondados */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}

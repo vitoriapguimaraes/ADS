@@ -1,0 +1,74 @@
+/* Estilo aplicado ao corpo da página */
+body {
+    /* Define a fonte usada no texto como Arial ou, se não disponível, uma fonte sem serifa genérica */
+    font-family: Arial, sans-serif;
+    /* Remove a margem padrão ao redor da página */
+    margin: 0;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Define a cor de fundo da página para um cinza claro */
+    background-color: #f4f4f4;
+    /* Usa o modelo de layout flexível para organizar o conteúdo */
+    display: flex;
+    /* Centraliza horizontalmente o conteúdo */
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo */
+    align-items: center;
+    /* Garante que a altura mínima da página seja 100% da altura da janela */
+    min-height: 100vh;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    /* Usa o modelo de layout em grade para organizar o conteúdo */
+    display: grid;
+    /* Define colunas da grade que se ajustam automaticamente */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Define um espaço de 20 pixels entre os itens da grade */
+    gap: 20px;
+    /* Define a largura do contêiner como 80% da largura da página */
+    width: 80%;
+}
+
+/* Estilo básico para os exemplos de opacidade */
+.opacity-example {
+    /* Define a cor de fundo dos elementos para verde */
+    background-color: #4CAF50;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Centraliza o texto dentro dos elementos */
+    text-align: center;
+    /* Define a cor do texto como branco */
+    color: white;
+    /* Adiciona cantos arredondados com um raio de 8 pixels */
+    border-radius: 8px;
+    /* Adiciona uma sombra ao redor dos elementos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Diferentes níveis de opacidade */
+
+/* Opacidade de 100%, totalmente opaco */
+.opacity-100 {
+    opacity: 1;
+}
+
+/* Opacidade de 75%, ligeiramente transparente */
+.opacity-75 {
+    opacity: 0.75;
+}
+
+/* Opacidade de 50%, meio transparente */
+.opacity-50 {
+    opacity: 0.5;
+}
+
+/* Opacidade de 25%, bastante transparente */
+.opacity-25 {
+    opacity: 0.25;
+}
+
+/* Opacidade de 10%, quase completamente transparente */
+.opacity-10 {
+    opacity: 0.1;
+}

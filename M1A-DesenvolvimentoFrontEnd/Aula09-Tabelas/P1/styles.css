@@ -1,0 +1,95 @@
+/* Estilo aplicado ao corpo da página */
+body {
+    /* Define a fonte usada no texto como Arial ou, se não disponível, uma fonte sem serifa genérica */
+    font-family: Arial, sans-serif;
+    /* Remove a margem padrão ao redor da página */
+    margin: 0;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Define a cor de fundo da página para um cinza claro */
+    background-color: #f4f4f4;
+    /* Usa o modelo de layout flexível para organizar o conteúdo */
+    display: flex;
+    /* Centraliza horizontalmente o conteúdo */
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo */
+    align-items: center;
+    /* Garante que a altura mínima da página seja 100% da altura da janela */
+    min-height: 100vh;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    /* Define a largura máxima do contêiner como 800 pixels */
+    max-width: 800px;
+    /* Centraliza o contêiner horizontalmente */
+    margin: 0 auto;
+    /* Define a cor de fundo do contêiner para branco */
+    background-color: white;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Adiciona cantos arredondados com um raio de 8 pixels */
+    border-radius: 8px;
+    /* Adiciona uma sombra ao redor do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a tabela */
+table {
+    /* Define a largura da tabela para ocupar 100% do contêiner */
+    width: 100%;
+    /* Remove os espaços entre as células da tabela */
+    border-collapse: collapse;
+    /* Adiciona uma margem inferior de 20 pixels à tabela */
+    margin-bottom: 20px;
+}
+
+/* Estilo para o cabeçalho da tabela */
+thead {
+    /* Define a cor de fundo do cabeçalho da tabela como cinza escuro */
+    background-color: #333;
+    /* Define a cor do texto do cabeçalho como branco */
+    color: white;
+}
+
+/* Estilo para as células do cabeçalho da tabela */
+thead th {
+    /* Adiciona um preenchimento de 10 pixels às células do cabeçalho */
+    padding: 10px;
+}
+
+/* Estilo para as linhas ímpares do corpo da tabela */
+tbody tr:nth-child(odd) {
+    /* Define a cor de fundo das linhas ímpares como um cinza muito claro */
+    background-color: #f9f9f9;
+}
+
+/* Estilo para as linhas pares do corpo da tabela */
+tbody tr:nth-child(even) {
+    /* Define a cor de fundo das linhas pares como branco */
+    background-color: #fff;
+}
+
+/* Estilo para as células do corpo da tabela */
+tbody td {
+    /* Adiciona um preenchimento de 10 pixels às células do corpo */
+    padding: 10px;
+    /* Adiciona uma borda de 1 pixel sólido e cinza claro ao redor das células do corpo */
+    border: 1px solid #ddd;
+}
+
+/* Estilo para o rodapé da tabela */
+tfoot {
+    /* Define a cor de fundo do rodapé da tabela como cinza claro */
+    background-color: #f4f4f4;
+    /* Define o peso da fonte do rodapé como negrito */
+    font-weight: bold;
+}
+
+/* Estilo para as células do rodapé da tabela */
+tfoot td {
+    /* Adiciona um preenchimento de 10 pixels às células do rodapé */
+    padding: 10px;
+    /* Adiciona uma borda superior de 2 pixels sólida e cinza escuro ao topo das células do rodapé */
+    border-top: 2px solid #333;
+}

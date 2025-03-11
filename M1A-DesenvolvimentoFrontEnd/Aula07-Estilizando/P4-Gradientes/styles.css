@@ -1,0 +1,83 @@
+/* Estilo aplicado ao corpo da página */
+body {
+    /* Define a fonte usada no texto como Arial ou, se não disponível, uma fonte sem serifa genérica */
+    font-family: Arial, sans-serif;
+    /* Remove a margem padrão ao redor da página */
+    margin: 0;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Define a cor de fundo da página para um cinza claro */
+    background-color: #f4f4f4;
+    /* Usa o modelo de layout flexível para organizar o conteúdo */
+    display: flex;
+    /* Centraliza horizontalmente o conteúdo */
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo */
+    align-items: center;
+    /* Garante que a altura mínima da página seja 100% da altura da janela */
+    min-height: 100vh;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    /* Usa o modelo de layout em grade para organizar o conteúdo */
+    display: grid;
+    /* Define colunas da grade que se ajustam automaticamente */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Define um espaço de 20 pixels entre os itens da grade */
+    gap: 20px;
+    /* Define a largura do contêiner como 80% da largura da página */
+    width: 80%;
+}
+
+/* Estilo básico para os exemplos de gradiente */
+.gradient-example {
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Centraliza o texto dentro dos elementos */
+    text-align: center;
+    /* Define a cor do texto como branco */
+    color: white;
+    /* Adiciona cantos arredondados com um raio de 8 pixels */
+    border-radius: 8px;
+    /* Adiciona uma sombra ao redor dos elementos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradiente Linear */
+.linear-gradient {
+    /* Define um fundo com gradiente linear de 90 graus (horizontal) com duas cores */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+}
+
+/* Gradiente Radial */
+.radial-gradient {
+    /* Define um fundo com gradiente radial (circular) com duas cores */
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+
+/* Gradiente Cônico */
+.conic-gradient {
+    /* Define um fundo com gradiente cônico (em forma de cone) começando de 0 graus */
+    background: conic-gradient(from 0deg, #ff7e5f, #feb47b, #ff7e5f);
+}
+
+/* Gradiente Diagonal */
+.diagonal-gradient {
+    /* Define um fundo com gradiente linear de 45 graus (diagonal) com duas cores */
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+/* Gradiente no Texto */
+.text-gradient {
+    /* Define um fundo com gradiente linear de 90 graus (horizontal) com duas cores */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    /* Usa o gradiente de fundo para a cor do texto no navegador Chrome, Safari e Opera */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Usa o gradiente de fundo para a cor do texto no restante dos navegadores */
+    background-clip: text;
+    text-emphasis-color: transparent;
+    /* Define a cor de fundo como branco para navegadores que não suportam gradiente no texto */
+    background-color: white;
+}

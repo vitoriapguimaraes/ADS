@@ -1,0 +1,68 @@
+<!--
+    CONCEITO
+
+    No HTML e CSS, listas estruturadas são usadas para criar listas com múltiplos níveis de hierarquia. 
+    Isso é útil para mostrar relações entre itens e subitens, como em um índice de livro, menu de navegação, ou listas de tarefas com subtarefas.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Exemplo de Listas Hierárquicas</title>
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplo de Listas Hierárquicas em HTML</h1>
+
+        <!-- Lista Não Ordenada com Múltiplos Níveis -->
+        <h2>Lista Não Ordenada</h2>
+        <ul>
+            <li>Item 1
+                <ul>
+                    <li>Subitem 1.1</li>
+                    <li>Subitem 1.2
+                        <ul>
+                            <li>Subitem 1.2.1</li>
+                            <li>Subitem 1.2.2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Item 2</li>
+            <li>Item 3
+                <ul>
+                    <li>Subitem 3.1</li>
+                    <li>Subitem 3.2</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Lista Ordenada com Múltiplos Níveis -->
+        <h2>Lista Ordenada</h2>
+        <ol>
+            <li>Primeiro Item
+                <ol>
+                    <li>Subitem 1.1</li>
+                    <li>Subitem 1.2
+                        <ol>
+                            <li>Subitem 1.2.1</li>
+                            <li>Subitem 1.2.2</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Segundo Item</li>
+            <li>Terceiro Item
+                <ol>
+                    <li>Subitem 3.1</li>
+                    <li>Subitem 3.2</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

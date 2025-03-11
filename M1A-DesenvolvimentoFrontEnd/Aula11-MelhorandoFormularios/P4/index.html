@@ -1,0 +1,41 @@
+<!--
+    CONCEITO
+
+    O atributo placeholder é usado em campos de entrada de formulário para mostrar um texto de dica que aparece dentro do campo antes do usuário começar a digitar. 
+    Esse texto ajuda a explicar ao usuário o que deve ser inserido naquele campo.
+
+    Você adiciona o atributo placeholder dentro da tag <input> ou <textarea> e define o texto de dica que deseja mostrar.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Exemplo de Placeholder</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplo de Placeholder</h1>
+
+        <!-- Formulário para demonstração do atributo placeholder -->
+        <form>
+            <!-- Campo de texto com placeholder -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            
+            <!-- Campo de email com placeholder -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+            
+            <!-- Área de texto com placeholder -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+            
+            <!-- Botão para enviar o formulário -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

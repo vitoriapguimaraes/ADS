@@ -1,0 +1,92 @@
+<!--
+    CONCEITO
+
+    Imagine que você tem uma tabela com várias informações, como uma planilha de dados. 
+    Para organizar essas informações de forma clara e estruturada, você pode dividir a tabela em três partes principais: o cabeçalho, o corpo e o rodapé. 
+    
+    No HTML, usamos <thead>, <tbody> e <tfoot> para representar essas partes.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Declaração do tipo de documento (HTML5) e define o idioma da página como inglês -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para garantir que a página seja responsiva em dispositivos móveis -->
+    <title>Exemplo de Tabela com Thead, Tbody e Tfoot</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vincula um arquivo CSS externo chamado "styles.css" para estilizar a página -->
+</head>
+
+<body>
+    <!-- Corpo da página, onde o conteúdo principal é inserido -->
+    <div class="container">
+        <!-- Contêiner principal que agrupa todo o conteúdo -->
+
+        <table>
+            <!-- Cria uma tabela -->
+            <thead>
+                <!-- Cabeçalho da tabela -->
+                <tr>
+                    <!-- Linha do cabeçalho -->
+                    <th>Produto</th>
+                    <!-- Cabeçalho da coluna de produtos -->
+                    <th>Preço</th>
+                    <!-- Cabeçalho da coluna de preços -->
+                    <th>Quantidade</th>
+                    <!-- Cabeçalho da coluna de quantidades -->
+                    <th>Total</th>
+                    <!-- Cabeçalho da coluna de totais -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Corpo da tabela -->
+                <tr>
+                    <!-- Primeira linha de dados -->
+                    <td>Produto 1</td>
+                    <!-- Celula da coluna de produtos -->
+                    <td>$10.00</td>
+                    <!-- Celula da coluna de preços -->
+                    <td>2</td>
+                    <!-- Celula da coluna de quantidades -->
+                    <td>$20.00</td>
+                    <!-- Celula da coluna de totais -->
+                </tr>
+                <tr>
+                    <!-- Segunda linha de dados -->
+                    <td>Produto 2</td>
+                    <td>$15.00</td>
+                    <td>3</td>
+                    <td>$45.00</td>
+                </tr>
+                <tr>
+                    <!-- Terceira linha de dados -->
+                    <td>Produto 3</td>
+                    <td>$7.00</td>
+                    <td>5</td>
+                    <td>$35.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- Rodapé da tabela -->
+                <tr>
+                    <!-- Linha do rodapé -->
+                    <td colspan="3">Total</td>
+                    <!-- Célula que ocupa três colunas, mostrando o rótulo "Total" -->
+                    <td>$100.00</td>
+                    <!-- Célula que mostra o valor total -->
+                </tr>
+            </tfoot>
+        </table>
+        <!-- Fim da tabela -->
+    </div>
+    <!-- Fim do contêiner principal -->
+</body>
+<!-- Fim do corpo da página -->
+
+</html>
+<!-- Fim do documento HTML -->

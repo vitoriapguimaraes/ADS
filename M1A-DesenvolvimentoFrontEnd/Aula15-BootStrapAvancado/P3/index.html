@@ -1,0 +1,72 @@
+<!--
+    LINK
+
+    https://getbootstrap.com/docs/5.3/components/modal/#how-it-works
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Modal com Bootstrap</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Container principal que se ajusta ao tamanho da tela -->
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="text-center my-4">
+            <h1>Exemplo de Modal com Bootstrap</h1>
+        </header>
+
+        <!-- Botão para abrir o modal -->
+        <div class="text-center">
+            <!-- O atributo data-toggle="modal" e data-target="#exemploModal" indicam que este botão abrirá o modal com id "exemploModal" -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exemploModal">
+                Abrir Modal
+            </button>
+        </div>
+
+        <!-- Definição do modal -->
+        <div class="modal fade" id="exemploModal" tabindex="-1" aria-labelledby="exemploModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Cabeçalho do modal -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exemploModalLabel">Título do Modal</h5>
+                        <!-- Botão para fechar o modal -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Corpo do modal -->
+                    <div class="modal-body">
+                        Este é o conteúdo do modal.
+                    </div>
+                    <!-- Rodapé do modal -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="text-center mt-4">
+            <p>&copy; 2024 Exemplo de Modal</p>
+        </footer>
+    </div>
+
+    <!-- Scripts do Bootstrap (jQuery e Popper.js são necessários para alguns componentes do Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

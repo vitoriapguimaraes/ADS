@@ -1,0 +1,38 @@
+<!--
+    CONCEITO
+
+    Um combobox é um campo que combina uma caixa de texto com uma lista de opções que você pode escolher. 
+    Pense nele como um menu suspenso (dropdown) que permite selecionar uma opção da lista. 
+    No HTML, usamos a tag <select> para criar um combobox, e dentro dela, usamos a tag <option> para listar as opções.
+
+    Um fieldset é uma forma de agrupar vários elementos de um formulário em uma seção com uma borda ao redor, ajudando a organizar melhor as informações. 
+    Para criar um fieldset, usamos a tag <fieldset>, e para adicionar um título ou legenda ao grupo, usamos a tag <legend>. 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Combobox e Fieldset</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <!-- Usando fieldset para agrupar elementos relacionados -->
+    <fieldset>
+        <legend>Informações Pessoais</legend> <!-- Título do fieldset -->
+        
+        <!-- Campo de texto para nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        
+        <!-- Combobox (select) para escolher uma opção de país -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+        </select>
+    </fieldset>
+</body>
+</html>

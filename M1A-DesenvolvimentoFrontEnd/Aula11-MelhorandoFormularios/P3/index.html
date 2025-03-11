@@ -1,0 +1,43 @@
+<!--
+    CONCEITO
+
+    Uma mensagem de erro é um aviso que aparece quando algo dá errado em um formulário ou página web. 
+    Por exemplo, se você deixar um campo obrigatório vazio ou digitar um email em um formato incorreto, uma mensagem de erro pode aparecer para avisar você sobre o problema.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Exemplo de Mensagem de Erro</title>
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+
+        <!-- Formulário para submissão -->
+        <form>
+            <!-- Campo de texto para o nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <span class="error-message">Por favor, insira seu nome.</span>
+            
+            <!-- Campo de email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <span class="error-message">Por favor, insira um email válido.</span>
+            
+            <!-- Área de texto para a mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+            <span class="error-message">Por favor, insira sua mensagem.</span>
+            
+            <!-- Botão para enviar o formulário -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!--
+    CONCEITO
+
+    Um label é uma etiqueta que descreve um campo de um formulário. 
+    Ele ajuda a identificar o que o usuário deve inserir em determinado campo. 
+    No HTML, usamos a tag <label>. 
+
+    Um campo hidden é um campo de formulário que não é visível para o usuário. 
+    Ele é usado para enviar informações que o usuário não precisa ver ou editar. 
+    No HTML, usamos a tag <input> com o atributo type="hidden". 
+
+    Um campo de email é um campo de formulário onde o usuário deve inserir um endereço de email. 
+    No HTML, usamos a tag <input> com o atributo type="email".
+
+    Um campo de data é um campo de formulário onde o usuário pode selecionar uma data. 
+    No HTML, usamos a tag <input> com o atributo type="date".
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Label, Hidden, Email e Data</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <!-- Formulário de cadastro -->
+    <form>
+        <!-- Campo de texto para o nome, com rótulo (label) -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        
+        <!-- Campo de email, com rótulo (label) -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
+        
+        <!-- Campo de data, com rótulo (label) -->
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento">
+        
+        <!-- Campo oculto (hidden) -->
+        <input type="hidden" id="userId" name="userId" value="12345">
+        
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

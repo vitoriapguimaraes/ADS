@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Blog</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Link para o Bootstrap -->
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+
+    <header class="bg-light text-dark text-center p-4">
+
+        <h1>Meu Blog</h1>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">Início</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">Sobre</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">Contato</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Carrossel -->
+
+    <div id="carouselExample" class="carousel slide mt-3" data-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagem 1">
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagem 2">
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagem 3">
+
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+            <span class="sr-only">Anterior</span>
+
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+            <span class="sr-only">Próximo</span>
+
+        </a>
+
+    </div>
+
+    <!-- Seção Principal -->
+
+    <div class="container mt-5">
+
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <h2>Postagens Recentes</h2>
+
+                <div class="mb-4">
+
+                    <h3>Título da Postagem 1</h3>
+
+                    <p class="text-muted">Publicado em 10 de Outubro de 2024</p>
+
+                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Postagem 1">
+
+                    <p>Resumo da postagem 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <h3>Título da Postagem 2</h3>
+
+                    <p class="text-muted">Publicado em 8 de Outubro de 2024</p>
+
+                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Postagem 2">
+
+                    <p>Resumo da postagem 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <h3>Título da Postagem 3</h3>
+
+                    <p class="text-muted">Publicado em 5 de Outubro de 2024</p>
+
+                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Postagem 3">
+
+                    <p>Resumo da postagem 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+
+                </div>
+
+            </div>
+
+            <!-- Barra Lateral -->
+
+            <div class="col-md-4">
+
+                <h2>Categorias</h2>
+
+                <ul class="list-group mb-4">
+
+                    <li class="list-group-item">Tecnologia</li>
+
+                    <li class="list-group-item">Desenvolvimento</li>
+
+                    <li class="list-group-item">Design</li>
+
+                    <li class="list-group-item">Marketing</li>
+
+                </ul>
+
+                <h2>Inscreva-se na Newsletter</h2>
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label for="emailNewsletter">E-mail</label>
+
+                        <input type="email" class="form-control" id="emailNewsletter" required>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Inscrever-se</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+
+    <footer class="bg-light text-dark text-center p-4 mt-5">
+
+        <p>© 2024 Seu Nome | <a href="#" class="text-dark">Política de Privacidade</a></p>
+
+        <div>
+
+            <a href="#" class="mr-3">Facebook</a>
+
+            <a href="#" class="mr-3">Twitter</a>
+
+            <a href="#">Instagram</a>
+
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!--
+    CONCEITO
+
+    O que é uma Tabela?
+    Uma tabela é uma maneira de organizar dados em linhas e colunas. 
+    No HTML, tabelas são usadas para apresentar informações de forma clara e estruturada.
+
+    1. Apresentar Dados Tabulares: Planilhas, listas de preços.
+    2. Horários e Calendários: Tabelas de horários, calendários escolares.
+    3. Listas de Contatos ou Diretórios: Diretórios de funcionários, listas de contatos.
+    4. Comparações de Produtos ou Serviços: Tabelas comparativas de características e preços.
+    5. Relatórios e Estatísticas: Dados de desempenho, resultados de pesquisas.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Alternativas para Tabelas em HTML</title>
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alternativas para Tabelas em HTML</h1>
+
+        <!-- Tabela Simples -->
+        <h2>Tabela Simples</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arroz</td>
+                    <td>R$ 20,00</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Feijão</td>
+                    <td>R$ 10,00</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Macarrão</td>
+                    <td>R$ 15,00</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Lista Ordenada -->
+        <h2>Lista Ordenada</h2>
+        <ol>
+            <li>Arroz - R$ 20,00 - Quantidade: 2</li>
+            <li>Feijão - R$ 10,00 - Quantidade: 5</li>
+            <li>Macarrão - R$ 15,00 - Quantidade: 3</li>
+        </ol>
+
+        <!-- Lista Não Ordenada -->
+        <h2>Lista Não Ordenada</h2>
+        <ul>
+            <li>Arroz - R$ 20,00 - Quantidade: 2</li>
+            <li>Feijão - R$ 10,00 - Quantidade: 5</li>
+            <li>Macarrão - R$ 15,00 - Quantidade: 3</li>
+        </ul>
+
+        <!-- Divs com Flexbox -->
+        <h2>Divs com Flexbox</h2>
+        <div class="flex-container">
+            <div class="flex-item">Produto: Arroz<br>Preço: R$ 20,00<br>Quantidade: 2</div>
+            <div class="flex-item">Produto: Feijão<br>Preço: R$ 10,00<br>Quantidade: 5</div>
+            <div class="flex-item">Produto: Macarrão<br>Preço: R$ 15,00<br>Quantidade: 3</div>
+        </div>
+    </div>
+</body>
+</html>

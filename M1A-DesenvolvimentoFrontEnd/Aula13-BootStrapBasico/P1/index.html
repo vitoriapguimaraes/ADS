@@ -1,0 +1,51 @@
+<!--
+    CONCEITO
+
+    O Bootstrap é um conjunto de ferramentas de código aberto para criar sites e aplicativos web de forma rápida e fácil. 
+    Ele oferece uma coleção de estilos prontos (CSS), componentes (como botões e formulários) e funcionalidades (usando JavaScript) que ajudam os desenvolvedores a criar páginas web bonitas e responsivas (que se ajustam a diferentes tamanhos de tela).
+
+    Por que Usar o Bootstrap?
+        Facilidade de Uso: Você não precisa começar do zero para criar um site bonito. O Bootstrap fornece estilos e componentes prontos.
+        Responsividade: Sites feitos com Bootstrap se ajustam automaticamente a diferentes tamanhos de tela (desktop, tablet, celular).
+        Consistência: Garante que todos os elementos do site tenham um estilo uniforme.
+
+    LINK
+
+    https://getbootstrap.com/
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Introdução ao Bootstrap</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Bem-vindo ao Bootstrap</h1>
+        <!-- Linha (row) que contém duas colunas (columns) -->
+        <div class="row">
+            <div class="col-md-6">
+                <p>Bootstrap é uma biblioteca front-end que facilita a criação de layouts responsivos e modernos.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Com Bootstrap, você pode rapidamente criar um site que funciona bem em dispositivos móveis e desktops.</p>
+            </div>
+        </div>
+        <!-- Botão estilizado pelo Bootstrap -->
+        <div class="text-center">
+            <button class="btn btn-primary">Clique Aqui</button>
+        </div>
+    </div>
+
+    <!-- Link para o JavaScript do Bootstrap e suas dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

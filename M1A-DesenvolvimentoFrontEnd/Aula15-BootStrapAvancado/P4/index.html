@@ -1,0 +1,73 @@
+<!--
+    LINK
+
+    https://getbootstrap.com/docs/5.3/content/tables/#overview
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabelas com Bootstrap</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Container principal que se ajusta ao tamanho da tela -->
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="text-center my-4">
+            <h1>Exemplo de Tabelas com Bootstrap</h1>
+        </header>
+
+        <!-- Seção com a tabela -->
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>João Silva</td>
+                        <td>joao.silva@example.com</td>
+                        <td>(11) 1234-5678</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Souza</td>
+                        <td>maria.souza@example.com</td>
+                        <td>(21) 8765-4321</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro Oliveira</td>
+                        <td>pedro.oliveira@example.com</td>
+                        <td>(31) 1122-3344</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="text-center mt-4">
+            <p>&copy; 2024 Exemplo de Tabelas</p>
+        </footer>
+    </div>
+
+    <!-- Scripts do Bootstrap (jQuery e Popper.js são necessários para alguns componentes do Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

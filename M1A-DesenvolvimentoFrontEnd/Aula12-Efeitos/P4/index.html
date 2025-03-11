@@ -1,0 +1,36 @@
+<!--
+    CONCEITO
+
+    O efeito translate é uma transformação que você pode aplicar a elementos HTML para movê-los de um lugar para outro na página. 
+    Esse efeito é feito usando CSS, a linguagem de estilo usada para definir a aparência das páginas web.
+
+    Para mover um elemento, usamos a propriedade transform junto com o valor translate no CSS. 
+    Podemos especificar a distância que queremos mover o elemento nos eixos horizontal (X) e vertical (Y).
+-->
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Exemplo de Efeito Translate</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplo de Efeito Translate</h1>
+        <!-- Botão que receberá o efeito de tradução -->
+        <button id="translateButton">Clique para mover</button>
+    </div>
+    <script>
+        // Seleciona o botão pelo ID
+        const button = document.getElementById('translateButton');
+
+        // Adiciona um evento de clique ao botão
+        button.addEventListener('click', function () {
+            // Adiciona a classe 'translate' ao botão quando ele é clicado
+            button.classList.toggle('translate');
+        });
+    </script>
+</body>
+</html>

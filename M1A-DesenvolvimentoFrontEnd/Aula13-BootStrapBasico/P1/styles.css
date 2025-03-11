@@ -1,0 +1,20 @@
+/* Estilizando o corpo (body) da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    background-color: #f4f4f4; /* Cor de fundo */
+    padding: 20px; /* Espaçamento ao redor */
+}
+
+/* Estilizando o contêiner principal */
+.container {
+    background-color: white; /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+}
+
+/* Estilizando os parágrafos dentro das colunas */
+p {
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
+}

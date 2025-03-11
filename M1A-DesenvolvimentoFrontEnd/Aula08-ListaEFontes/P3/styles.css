@@ -1,0 +1,85 @@
+/* Estilo aplicado ao corpo da página */
+body {
+    /* Define a fonte usada no texto como Arial ou, se não disponível, uma fonte sem serifa genérica */
+    font-family: Arial, sans-serif;
+    /* Remove a margem padrão ao redor da página */
+    margin: 0;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Define a cor de fundo da página para um cinza claro */
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    /* Define a largura máxima do contêiner como 800 pixels */
+    max-width: 800px;
+    /* Centraliza o contêiner horizontalmente */
+    margin: 0 auto;
+    /* Define a cor de fundo do contêiner para branco */
+    background-color: white;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Adiciona cantos arredondados com um raio de 8 pixels */
+    border-radius: 8px;
+    /* Adiciona uma sombra ao redor do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para as seções dentro do contêiner */
+section {
+    /* Adiciona uma margem inferior de 20 pixels para separar as seções */
+    margin-bottom: 20px;
+}
+
+/* Estilo para os títulos das seções */
+h2 {
+    /* Remove a margem superior dos títulos */
+    margin-top: 0;
+}
+
+/* Lista não ordenada (bullet points) */
+.unordered-list {
+    /* Define o tipo de marcador da lista como discos (círculos preenchidos) */
+    list-style-type: disc;
+    /* Adiciona um preenchimento à esquerda de 20 pixels para alinhar os itens da lista */
+    padding-left: 20px;
+}
+
+/* Lista ordenada (números) */
+.ordered-list {
+    /* Define o tipo de marcador da lista como números decimais */
+    list-style-type: decimal;
+    /* Adiciona um preenchimento à esquerda de 20 pixels para alinhar os itens da lista */
+    padding-left: 20px;
+}
+
+/* Lista aninhada (sublistas) */
+.nested-list {
+    /* Define o tipo de marcador da lista como discos (círculos preenchidos) para a lista principal */
+    list-style-type: disc;
+    /* Adiciona um preenchimento à esquerda de 20 pixels para alinhar os itens da lista */
+    padding-left: 20px;
+}
+
+/* Estilo para as sublistas dentro da lista aninhada */
+.nested-list ul {
+    /* Define o tipo de marcador da sublista como círculos (círculos não preenchidos) */
+    list-style-type: circle;
+    /* Adiciona um preenchimento à esquerda de 20 pixels para alinhar os itens da sublista */
+    padding-left: 20px;
+}
+
+/* Lista de descrição */
+
+/* Estilo para os termos a serem descritos na lista de descrição */
+.description-list dt {
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+}
+
+/* Estilo para as descrições dos termos na lista de descrição */
+.description-list dd {
+    /* Adiciona uma margem à esquerda de 20 pixels para alinhar as descrições */
+    margin-left: 20px;
+}

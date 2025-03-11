@@ -1,0 +1,47 @@
+<!--
+    CONCEITO
+
+    1.Criar um Documento HTML: Crie um arquivo HTML básico.
+    
+    2.Incluir o CSS do Bootstrap: Adicione o link para o arquivo CSS do Bootstrap no <head>.
+      Isso vai garantir que você tenha todos os estilos do Bootstrap disponíveis no seu projeto.
+      
+    3.Incluir o JavaScript do Bootstrap: Adicione os links para o arquivo JavaScript do Bootstrap e suas dependências no final do <body>.
+      Isso vai garantir que todos os componentes do Bootstrap, como menus e modais, funcionem corretamente.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Configuração do Bootstrap</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Bem-vindo ao Bootstrap</h1>
+        <!-- Linha (row) que contém duas colunas (columns) -->
+        <div class="row">
+            <div class="col-md-6">
+                <p>Bootstrap é uma biblioteca front-end que facilita a criação de layouts responsivos e modernos.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Com Bootstrap, você pode rapidamente criar um site que funciona bem em dispositivos móveis e desktops.</p>
+            </div>
+        </div>
+        <!-- Botão estilizado pelo Bootstrap -->
+        <div class="text-center">
+            <button class="btn btn-primary">Clique Aqui</button>
+        </div>
+    </div>
+
+    <!-- Link para o JavaScript do Bootstrap e suas dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

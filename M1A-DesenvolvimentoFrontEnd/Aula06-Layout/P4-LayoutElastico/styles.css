@@ -1,0 +1,71 @@
+body {
+    /* Define a fonte do texto como Arial. Se Arial não estiver disponível, usa uma fonte genérica sans-serif */
+    font-family: Arial, sans-serif;
+    /* Remove as margens padrão do navegador ao redor da página */
+    margin: 0;
+    /* Remove o preenchimento padrão do navegador */
+    padding: 0;
+    /* Define a cor de fundo da página como um cinza claro */
+    background-color: #f4f4f4;
+    /* Usa o modelo de layout Flexbox para organizar os elementos filhos */
+    display: flex;
+    /* Organiza os elementos filhos em uma coluna vertical */
+    flex-direction: column;
+    /* Centraliza os itens horizontalmente no centro da página */
+    align-items: center;
+}
+
+header,
+footer {
+    /* Define a largura do cabeçalho e do rodapé para ocupar 100% da largura da página */
+    width: 100%;
+    /* Define a cor de fundo como um cinza escuro */
+    background-color: #333;
+    /* Define a cor do texto como branca */
+    color: white;
+    /* Centraliza o texto no centro horizontalmente */
+    text-align: center;
+    /* Adiciona um preenchimento de 1em na parte superior e inferior */
+    padding: 1em 0;
+}
+
+main {
+    /* Permite que o conteúdo principal cresça para ocupar o espaço disponível */
+    flex: 1;
+    /* Usa o modelo de layout Flexbox para o conteúdo principal */
+    display: flex;
+    /* Centraliza os itens verticalmente */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Define a largura do conteúdo principal para ocupar 100% da página */
+    width: 100%;
+}
+
+.elastic-container {
+    /* Define a largura do contêiner como 80% da largura da janela */
+    width: 80%;
+    /* Define uma largura máxima de 800 pixels para o contêiner */
+    max-width: 800px;
+    /* Define a cor de fundo do contêiner como branca */
+    background-color: white;
+    /* Adiciona um preenchimento interno de 20 pixels ao contêiner */
+    padding: 20px;
+    /* Adiciona uma sombra sutil ao redor do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Arredonda os cantos do contêiner */
+    border-radius: 8px;
+    /* Centraliza o texto dentro do contêiner */
+    text-align: center;
+}
+
+h1,
+h2 {
+    /* Remove a margem superior e inferior, mas adiciona uma margem inferior de 20 pixels */
+    margin: 0 0 20px 0;
+}
+
+p {
+    /* Remove todas as margens padrão dos parágrafos */
+    margin: 0;
+}

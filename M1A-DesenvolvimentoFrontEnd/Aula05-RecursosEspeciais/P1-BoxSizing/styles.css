@@ -1,0 +1,68 @@
+/* Estilizando o corpo (body) da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    background-color: #f4f4f4; /* Cor de fundo */
+    padding: 20px; /* Espaçamento ao redor */
+}
+
+/* Estilizando o contêiner principal */
+.container {
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Centralizando o contêiner */
+    background-color: white; /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+    text-align: center; /* Centralizando o texto */
+}
+
+/* Estilizando o cabeçalho */
+h1 {
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilizando as caixas */
+.box {
+    width: 200px; /* Largura da caixa */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Espaçamento ao redor e centralização */
+    border: 5px solid #007bff; /* Borda azul */
+    background-color: #e7f1ff; /* Cor de fundo da caixa */
+}
+
+/* 
+content-box (padrão):
+Como é calculado:
+    A largura e a altura que você define são aplicadas APENAS ao conteúdo do elemento.
+    O padding e a borda são adicionados à largura e altura especificadas, aumentando o tamanho total do elemento.
+Exemplo:
+    Se você define uma largura de 200 pixels, adiciona 20 pixels de padding e 5 pixels de borda, o tamanho total da caixa será:
+    200 pixels (conteúdo) + 20 pixels (padding esquerdo) + 20 pixels (padding direito) + 5 pixels (borda esquerda) + 5 pixels (borda direita) = 250 pixels
+*/
+
+/* Estilizando a caixa com content-box (padrão) */
+.content-box {
+    box-sizing: content-box; /* Define box-sizing como content-box */
+}
+
+/*
+border-box:
+Como é calculado:
+    A largura e a altura que você define INCLUEM o conteúdo, o padding e a borda.
+    Isso significa que o tamanho total do elemento não muda, independentemente do padding e da borda que você adicionar.
+
+Exemplo:
+    Se você define uma largura de 200 pixels e adiciona 20 pixels de padding e 5 pixels de borda, o tamanho total da caixa permanecerá:
+    200 pixels (largura total) = conteúdo + padding + borda
+*/
+/* Estilizando a caixa com border-box */
+.border-box {
+    box-sizing: border-box; /* Define box-sizing como border-box */
+}
+
+/* Estilizando os parágrafos dentro das caixas */
+.box p {
+    margin: 0; /* Removendo a margem padrão dos parágrafos */
+    color: #007bff; /* Cor do texto */
+}

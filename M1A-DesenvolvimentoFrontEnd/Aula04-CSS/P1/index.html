@@ -1,0 +1,68 @@
+<!--CSS, ou Cascading Style Sheets, é a linguagem usada para descrever a aparência e o layout de uma página web. -->
+<!--Ele permite que você separe o conteúdo (HTML) da apresentação (CSS), facilitando a manutenção e a atualização do estilo do site. -->
+
+<!--Conceitos Básicos do CSS
+        Seletores
+            Seletores são usados para "selecionar" os elementos HTML que você deseja estilizar. 
+            Eles indicam quais partes do HTML serão afetadas pelos estilos definidos.
+        Propriedades e Valores
+            Propriedades são características específicas que você deseja estilizar, como cor, fonte, tamanho, margens, etc.
+        Cascata e Herança
+            A cascata se refere à maneira como o CSS aplica múltiplas regras de estilo, onde a ordem importa. 
+            Regras mais específicas ou mais recentes podem substituir regras anteriores ou mais gerais.
+            
+            Herança refere-se ao fato de que alguns estilos aplicados a elementos pai podem ser herdados por seus filhos.
+        Arquivos CSS 
+            Arquivos CSS são arquivos separados que contêm regras de estilo. -->
+    
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR">
+<!-- Início do documento HTML com idioma definido como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura o viewport para garantir que o site seja responsivo em dispositivos móveis -->
+    <title>Exemplo de Definição de CSS</title>
+    <!-- Define o título da página, que aparece na aba do navegador -->
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o arquivo CSS externo -->
+</head>
+
+<body>
+    <!-- Início do corpo do documento -->
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Exemplo de CSS Externo</h1>
+        <!-- Título principal do site -->
+    </header>
+
+    <!-- Parágrafos com diferentes estilos -->
+    <p class="paragrafo-destaque">
+        Este é um parágrafo destacado com CSS. Usamos uma classe CSS para definir seu estilo.
+    </p>
+    <p>
+        Este é um parágrafo normal. O estilo é aplicado diretamente aos elementos <code>p</code>.
+    </p>
+
+    <!-- Link com estilo CSS -->
+    <p>
+        Visite o <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">MDN Web Docs</a> para
+        aprender mais sobre CSS.
+    </p>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2024 Exemplo de HTML e CSS. Todos os direitos reservados.</p>
+        <!-- Informação de copyright -->
+    </footer>
+
+</body>
+<!-- Fim do corpo do documento -->
+
+</html>
+<!-- Fim do documento HTML -->

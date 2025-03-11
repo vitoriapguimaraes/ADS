@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Dinâmico - HTML</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Site dinâmico em HTML</h1>
+        <nav>
+            <a href="#apresentacao" class="text-white">Apresentação</a> |
+            <a href="#estruturacao" class="text-white">Estruturação</a> |
+            <a href="#formulario" class="text-white">Formulário</a> |
+            <a href="#multimidia" class="text-white">Multimídia</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apresentacao">
+            <h2>Apresentação de Conteúdo</h2>
+            <p>HTML permite apresentar uma variedade de tipos de conteúdo,
+                como texto, imagens, vídeos, e áudio.</p>
+        </section>
+
+        <section id="estruturacao">
+            <h2>Estruturação de Conteúdo</h2>
+            <p>HTML oferece uma série de elementos semânticos (por exemplo,
+                <code>&lt;header&gt;</code>,
+                <code>&lt;nav&gt;</code>,
+                <code>&lt;main&gt;</code>,
+                <code>&lt;section&gt;</code>,
+                <code>&lt;article&gt;</code>,
+                <code>&lt;footer&gt;</code>).
+            </p>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulários</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" name="email">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <section id="multimidia">
+            <h2>Multimídia</h2>
+            <h3>Imagem</h3>
+            <img src="https://via.placeholder.com/150" alt="Exemplo de Imagem" class="img-fluid">
+            <h3>Vídeo</h3>
+            <video controls class="w-25">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h3>Áudio</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exemplo de Página HTML</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Usando getElementById()
+        const apresentacaoSection = document.getElementById('apresentacao');
+        apresentacaoSection.style.backgroundColor = '#f0f0f0';
+
+        // Usando getElementsByClassName()
+        const textWhiteElements = document.getElementsByClassName('text-white');
+        for (let i = 0; i < textWhiteElements.length; i++) {
+            //textWhiteElements[i].style.color = 'blue';
+            textWhiteElements[i].className = 'blue';
+        }
+
+        // Usando getElementsByTagName()
+        const sectionElements = document.getElementsByTagName('section');
+        for (let i = 0; i < sectionElements.length; i++) {
+            sectionElements[i].style.border = '1px solid #ccc';
+        }
+
+        // Usando getElementsByName()
+        const emailInput = document.getElementsByName('email')[0];
+        emailInput.placeholder = 'Digite seu email aqui';
+    </script>
+</body>
+
+</html>

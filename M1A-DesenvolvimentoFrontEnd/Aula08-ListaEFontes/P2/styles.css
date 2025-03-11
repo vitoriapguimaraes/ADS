@@ -1,0 +1,91 @@
+/* Estilo aplicado ao corpo da página */
+body {
+    /* Define a fonte usada no texto como Arial ou, se não disponível, uma fonte sem serifa genérica */
+    font-family: Arial, sans-serif;
+    /* Remove a margem padrão ao redor da página */
+    margin: 0;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Define a cor de fundo da página para um cinza claro */
+    background-color: #f4f4f4;
+    /* Usa o modelo de layout flexível para organizar o conteúdo */
+    display: flex;
+    /* Centraliza horizontalmente o conteúdo */
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo */
+    align-items: center;
+    /* Garante que a altura mínima da página seja 100% da altura da janela */
+    min-height: 100vh;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    /* Usa o modelo de layout em grade para organizar o conteúdo */
+    display: grid;
+    /* Define colunas da grade que se ajustam automaticamente */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Define um espaço de 20 pixels entre os itens da grade */
+    gap: 20px;
+    /* Define a largura do contêiner como 80% da largura da página */
+    width: 80%;
+}
+
+/* Estilo básico para os exemplos de alinhamento */
+.alignment-example {
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Define o alinhamento do texto como à esquerda por padrão */
+    text-align: left;
+    /* Define a cor de fundo dos elementos para branco */
+    background-color: white;
+    /* Adiciona cantos arredondados com um raio de 8 pixels */
+    border-radius: 8px;
+    /* Adiciona uma sombra ao redor dos elementos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Usa o modelo de layout flexível para organizar o conteúdo */
+    display: flex;
+    /* Alinha horizontalmente o conteúdo à esquerda por padrão */
+    justify-content: flex-start;
+    /* Alinha verticalmente o conteúdo ao topo por padrão */
+    align-items: flex-start;
+}
+
+/* Alinhamentos de texto */
+.align-left {
+    /* Alinha o texto à esquerda */
+    text-align: left;
+}
+
+.align-center {
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+}
+
+.align-right {
+    /* Alinha o texto à direita */
+    text-align: right;
+}
+
+.align-justify {
+    /* Justifica o texto, distribuindo o espaço uniformemente entre as palavras */
+    text-align: justify;
+}
+
+/* Alinhamentos verticais */
+.align-top {
+    /* Alinha o conteúdo ao topo */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.align-middle {
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.align-bottom {
+    /* Alinha o conteúdo ao fundo */
+    justify-content: flex-end;
+    align-items: flex-end;
+}

@@ -1,0 +1,24 @@
+/* Estilos para a tabela */
+.minha-tabela {
+    /* Adiciona bordas à tabela */
+    border: 1px solid rgb(245, 0, 0);
+    /* Define a largura da tabela como 70% da página */
+    width: 70%;
+    /* Define a altura da tabela como 200 pixels */
+    height: 200px;
+    /* Centraliza a tabela na página */
+    margin: 0 auto;
+    /* Define o espaçamento entre as células */
+    border-spacing: 5px;
+  }
+  
+  /* Estilos para as células da tabela */
+  .minha-tabela th, .minha-tabela td {
+    /* Adiciona um espaçamento interno de 10 pixels */
+    padding: 10px;
+    /* Adiciona bordas às células */
+    border: 1px solid rgb(17, 0, 255);
+    /* Centraliza o texto dentro das células */
+    text-align: center;
+  }
+  

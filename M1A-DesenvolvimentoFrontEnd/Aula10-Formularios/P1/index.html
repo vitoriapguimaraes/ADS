@@ -1,0 +1,38 @@
+<!--
+    CONCEITO
+     
+    No HTML, usamos <input> e <textarea> para criar campos onde os usuários podem inserir essas informações em uma página web.
+    O <input> é um elemento usado para criar vários tipos de campos de entrada de dados em formulários.        
+    O <textarea> é um elemento usado para criar campos de entrada de texto multilinha. 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Input e Textarea</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+
+    <!-- Formulário de contato -->
+    <form>
+        <!-- Campo de texto para o nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        
+        <!-- Campo de texto para o email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
+        
+        <!-- Área de texto para a mensagem -->
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+        
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

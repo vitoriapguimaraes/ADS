@@ -1,0 +1,45 @@
+/* Propriedades gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Estilo para as caixas de gradiente */
+.gradient-box {
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+/* Gradiente linear */
+/* Um degradê linear cria uma transição suave entre várias cores ao longo de uma linha reta. 
+   A linha pode ser horizontal, vertical ou em qualquer ângulo. */
+
+/* Parâmetros:
+    direction: Direção do degradê. Pode ser um ângulo (em graus) ou palavras-chave (to left, to right, to top, to bottom).
+    color-stop: Ponto de parada das cores, onde cada cor começa ou termina.  */
+.linear {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* Gradiente radial */
+/* Um degradê radial cria uma transição suave entre várias cores que emana de um ponto central, formando círculos concêntricos. */
+/* Parâmetros:
+    shape: Forma do degradê (por padrão é ellipse, pode ser circle).
+    size: Tamanho do degradê (palavras-chave como closest-side, farthest-side, closest-corner, farthest-corner).
+    position: Posição do ponto central do degradê (por padrão é center).
+    color-stop: Ponto de parada das cores, onde cada cor começa ou termina. */
+.radial {
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}

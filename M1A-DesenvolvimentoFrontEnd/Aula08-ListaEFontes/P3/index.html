@@ -1,0 +1,121 @@
+<!--
+    CONCEITO
+
+    Imagine que você tem um pedaço de papel e quer organizar algumas informações em formato de lista, como uma lista de compras ou uma lista de tarefas. 
+    Para fazer isso, você pode usar dois tipos principais de listas: uma lista ordenada (numerada) ou uma lista não ordenada (com marcadores).
+
+    No HTML e CSS, listas são usadas para organizar e apresentar informações de maneira clara e estruturada. 
+    Existem dois tipos principais de listas que são amplamente utilizadas:
+    Lista Ordenada (Ordered List)
+    Lista Não Ordenada (Unordered List)
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Declaração do tipo de documento (HTML5) e define o idioma da página como inglês -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para garantir que a página seja responsiva em dispositivos móveis -->
+    <title>Exemplos de Listas</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vincula um arquivo CSS externo chamado "styles.css" para estilizar a página -->
+</head>
+
+<body>
+    <!-- Corpo da página, onde o conteúdo principal é inserido -->
+    <div class="container">
+        <!-- Contêiner principal que agrupa todas as seções de listas -->
+
+        <section>
+            <!-- Seção para lista não ordenada -->
+            <h2>Lista Não Ordenada</h2>
+            <!-- Título da seção -->
+            <ul class="unordered-list">
+                <!-- Lista não ordenada (bullet points) com a classe "unordered-list" -->
+                <li>Item 1</li>
+                <!-- Primeiro item da lista -->
+                <li>Item 2</li>
+                <!-- Segundo item da lista -->
+                <li>Item 3</li>
+                <!-- Terceiro item da lista -->
+                <li>Item 4</li>
+                <!-- Quarto item da lista -->
+            </ul>
+        </section>
+
+        <section>
+            <!-- Seção para lista ordenada -->
+            <h2>Lista Ordenada</h2>
+            <!-- Título da seção -->
+            <ol class="ordered-list">
+                <!-- Lista ordenada (números) com a classe "ordered-list" -->
+                <li>Primeiro item</li>
+                <!-- Primeiro item da lista ordenada -->
+                <li>Segundo item</li>
+                <!-- Segundo item da lista ordenada -->
+                <li>Terceiro item</li>
+                <!-- Terceiro item da lista ordenada -->
+                <li>Quarto item</li>
+                <!-- Quarto item da lista ordenada -->
+            </ol>
+        </section>
+
+        <section>
+            <!-- Seção para lista aninhada -->
+            <h2>Lista Aninhada</h2>
+            <!-- Título da seção -->
+            <ul class="nested-list">
+                <!-- Lista não ordenada principal com a classe "nested-list" -->
+                <li>Item 1
+                    <!-- Primeiro item da lista principal com uma sublista -->
+                    <ul>
+                        <!-- Sublista não ordenada dentro do item 1 -->
+                        <li>Subitem 1.1</li>
+                        <!-- Primeiro subitem da sublista -->
+                        <li>Subitem 1.2</li>
+                        <!-- Segundo subitem da sublista -->
+                    </ul>
+                </li>
+                <li>Item 2
+                    <!-- Segundo item da lista principal com uma sublista -->
+                    <ul>
+                        <!-- Sublista não ordenada dentro do item 2 -->
+                        <li>Subitem 2.1</li>
+                        <!-- Primeiro subitem da sublista -->
+                        <li>Subitem 2.2</li>
+                        <!-- Segundo subitem da sublista -->
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <!-- Seção para lista de descrição -->
+            <h2>Lista de Descrição</h2>
+            <!-- Título da seção -->
+            <dl class="description-list">
+                <!-- Lista de descrição com a classe "description-list" -->
+                <dt>HTML</dt>
+                <!-- Termo a ser descrito -->
+                <dd>Uma linguagem de marcação para criar páginas web.</dd>
+                <!-- Descrição do termo HTML -->
+                <dt>CSS</dt>
+                <!-- Outro termo a ser descrito -->
+                <dd>Uma linguagem de folha de estilo usada para descrever a apresentação de um documento escrito em HTML ou XML.</dd>
+                <!-- Descrição do termo CSS -->
+                <dt>JavaScript</dt>
+                <!-- Outro termo a ser descrito -->
+                <dd>Uma linguagem de programação comumente usada no desenvolvimento web.</dd>
+                <!-- Descrição do termo JavaScript -->
+            </dl>
+        </section>
+    </div>
+    <!-- Fim do contêiner principal -->
+</body>
+<!-- Fim do corpo da página -->
+
+</html>
+<!-- Fim do documento HTML -->

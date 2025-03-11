@@ -1,0 +1,130 @@
+<!-- CORES se referem especificamente aos aspectos visuais de uma página que envolvem cor, como a cor do texto, a cor do fundo de um elemento, a cor das bordas, etc. -->
+
+<!-- ESTILOS abrangem uma gama mais ampla de propriedades que afetam a aparência e o layout dos elementos da página, tamanho do texto, espaçamento, alinhamento, bordas, margens, etc. -->
+
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR">
+<!-- Início do documento HTML com idioma definido como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura o viewport para garantir que o site seja responsivo em dispositivos móveis -->
+    <title>Conceitos de Cores e Estilos</title>
+    <!-- Define o título da página, que aparece na aba do navegador -->
+    
+    <!--
+        CORES E ESTILOS
+    -->
+
+    <style>
+        /* Estilos CSS embutidos */
+
+        /* 
+            Seletor
+                Propriedade
+                    Valor
+        */
+        
+        /* Define a cor de fundo do corpo do documento */
+        body {
+            background-color: #f0f0f0;
+            /* Cinza claro */
+            font-family: Arial, sans-serif;
+            /* Define a fonte padrão */
+        }
+
+        /* Define o estilo do cabeçalho */
+        header {
+            background-color: #750e72;
+            /* Cinza escuro */
+            color: white;
+            /* Texto branco */
+            padding: 10px;
+            text-align: center;
+            /* Centraliza o texto */
+        }
+
+        /* Define o estilo dos parágrafos */
+        p {
+            color: #333333;
+            /* Texto cinza escuro */
+            font-size: 16px;
+            /* Tamanho da fonte */
+            line-height: 1.5;
+            /* Altura da linha */
+            margin: 10px 20px;
+            /* Margens ao redor do parágrafo */
+        }
+
+        /* Define o estilo dos links */
+        a {
+            color: blue;
+            /* Cor do texto do link */
+            text-decoration: none;
+            /* Remove o sublinhado */
+        }
+
+        /* Estilo para links ao passar o mouse */
+        a:hover {
+            text-decoration: underline;
+            /* Adiciona sublinhado ao passar o mouse */
+        }
+
+        /* Define o estilo do rodapé */
+        footer {
+            background-color: #750e72;
+            /* Cinza escuro */
+            text-align: center;
+            /* Centraliza o texto */
+            padding: 10px;
+            position: fixed;
+            /* Fixa o rodapé na parte inferior */
+            bottom: 0;
+            width: 100%;
+            /* Largura total */
+        }
+
+        footer p {
+            color: white;
+            /* Texto branco */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Início do corpo do documento -->
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Exemplo de Cores e Estilos em HTML</h1>
+        <!-- Título principal do site -->
+    </header>
+
+    <!-- Parágrafos com diferentes estilos -->
+    <p>
+        Este é um exemplo de parágrafo. Usamos CSS para definir a cor do texto, tamanho da fonte e margens.
+    </p>
+    <p>
+        Você pode alterar a aparência dos elementos HTML usando diferentes propriedades CSS.
+    </p>
+
+    <!-- Link com estilo CSS -->
+    <p>
+        Visite o <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">MDN Web Docs</a> para
+        aprender mais sobre CSS.
+    </p>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2024 Exemplo de HTML. Todos os direitos reservados.</p>
+        <!-- Informação de copyright -->
+    </footer>
+
+</body>
+<!-- Fim do corpo do documento -->
+
+</html>
+<!-- Fim do documento HTML -->

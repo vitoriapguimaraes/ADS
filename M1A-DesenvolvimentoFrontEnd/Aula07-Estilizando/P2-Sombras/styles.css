@@ -1,0 +1,91 @@
+/* Aplique o estilo ao corpo da página */
+body {
+    /* Define a fonte usada no texto para Arial ou, se não disponível, uma fonte sans-serif genérica */
+    font-family: Arial, sans-serif;
+    /* Remove margens padrão ao redor da página */
+    margin: 0;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Define a cor de fundo da página para um cinza claro */
+    background-color: #f4f4f4;
+    /* Usa o modelo de layout flexível para organizar o conteúdo */
+    display: flex;
+    /* Centraliza horizontalmente o conteúdo */
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo */
+    align-items: center;
+    /* Garante que a altura mínima da página seja 100% da altura da janela */
+    min-height: 100vh;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    /* Usa o modelo de layout em grade para organizar o conteúdo */
+    display: grid;
+    /* Define colunas da grade que se ajustam automaticamente */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Define um espaço de 20 pixels entre os itens da grade */
+    gap: 20px;
+    /* Define a largura do contêiner como 80% da largura da página */
+    width: 80%;
+}
+
+/* Estilo básico para os elementos de exemplo de sombra */
+.shadow-example {
+    /* Define a cor de fundo dos elementos para branco */
+    background-color: white;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo */
+    padding: 20px;
+    /* Centraliza o texto dentro dos elementos */
+    text-align: center;
+    /* Adiciona cantos arredondados com um raio de 8 pixels */
+    border-radius: 8px;
+}
+
+/* Sombra simples */
+.simple-shadow {
+    /* Adiciona uma sombra com leve desvio e suavidade */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sombra com propagação */
+.spread-shadow {
+    /* Adiciona uma sombra mais espalhada e um pouco mais escura */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sombra interna */
+.inset-shadow {
+    /* Adiciona uma sombra interna com leve desvio e suavidade */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sombra desfocada */
+.blur-shadow {
+    /* Adiciona uma sombra mais desfocada */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sombra colorida */
+.color-shadow {
+    /* Adiciona uma sombra vermelha */
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Múltiplas sombras */
+.multiple-shadows {
+    /* Adiciona duas sombras com direções e desvios diferentes */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sombra no canto inferior direito */
+.bottom-right-shadow {
+    /* Adiciona uma sombra no canto inferior direito */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sombra no canto superior esquerdo */
+.top-left-shadow {
+    /* Adiciona uma sombra no canto superior esquerdo */
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.3);
+}

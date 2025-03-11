@@ -1,0 +1,59 @@
+/* Estilizando o body para centralizar o conteúdo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* Estilizando o cabeçalho */
+h1 {
+    color: #333;
+    margin-top: 50px;
+}
+
+/* Estilizando o formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilizando os rótulos (labels) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Estilizando os campos de entrada (input) */
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Largura total do elemento pai */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 4px; /* Cantos arredondados */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilizando o botão de envio */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilizando o botão de envio ao passar o mouse */
+button:hover {
+    background-color: #0056b3;
+}

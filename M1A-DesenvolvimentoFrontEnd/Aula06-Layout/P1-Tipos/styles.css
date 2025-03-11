@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Define a família de fontes do texto como Arial, com fallback para sans-serif */
+    margin: 0;
+    /* Remove todas as margens ao redor do body */
+    padding: 0;
+    /* Remove todo o padding interno do body */
+    background-color: #f5f5f5;
+    /* Define a cor de fundo do body como um cinza claro */
+}
+
+header {
+    background-color: #333;
+    /* Define a cor de fundo do header como um cinza escuro */
+    color: white;
+    /* Define a cor do texto do header como branco */
+    text-align: center;
+    /* Centraliza o texto dentro do header */
+    padding: 1em 0;
+    /* Adiciona um padding vertical de 1em (espaçamento interno) no header */
+}
+
+section {
+    margin: 20px;
+    /* Define uma margem de 20 pixels ao redor da section */
+    padding: 20px;
+    /* Define um padding de 20 pixels dentro da section */
+    background-color: white;
+    /* Define a cor de fundo da section como branco */
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas de 8 pixels à section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra ao redor da section para dar um efeito de profundidade */
+}
+
+h2 {
+    margin-top: 0;
+    /* Remove a margem superior do h2 */
+}
+
+/* Grid Layout */
+
+.grid-container {
+    display: grid;
+    /* Define o contêiner como um grid (grade) */
+    grid-template-columns: repeat(2, 1fr);
+    /* Cria duas colunas de largura igual dentro do grid */
+    gap: 10px;
+    /* Define um espaço de 10 pixels entre os itens do grid */
+}
+
+.grid-item {
+    background-color: #4caf50;
+    /* Define a cor de fundo dos itens do grid como verde */
+    color: white;
+    /* Define a cor do texto dos itens do grid como branco */
+    padding: 20px;
+    /* Define um padding de 20 pixels dentro dos itens do grid */
+    text-align: center;
+    /* Centraliza o texto dentro dos itens do grid */
+    border-radius: 4px;
+    /* Adiciona bordas arredondadas de 4 pixels aos itens do grid */
+}
+
+/* Flexbox Layout */
+
+.flex-container {
+    display: flex;
+    /* Define o contêiner como um flexbox */
+    justify-content: space-between;
+    /* Distribui os itens dentro do contêiner com espaço igual entre eles */
+    gap: 10px;
+    /* Define um espaço de 10 pixels entre os itens do flexbox */
+}
+
+.flex-item {
+    background-color: #2196f3;
+    /* Define a cor de fundo dos itens do flexbox como azul */
+    color: white;
+    /* Define a cor do texto dos itens do flexbox como branco */
+    padding: 20px;
+    /* Define um padding de 20 pixels dentro dos itens do flexbox */
+    text-align: center;
+    /* Centraliza o texto dentro dos itens do flexbox */
+    flex: 1;
+    /* Permite que os itens do flexbox cresçam igualmente dentro do contêiner */
+    border-radius: 4px;
+    /* Adiciona bordas arredondadas de 4 pixels aos itens do flexbox */
+}
+
+/* Float Layout */
+
+.float-container {
+    overflow: hidden;
+    /* Garante que o contêiner flutuante contenha os elementos flutuados */
+}
+
+.float-item {
+    width: 45%;
+    /* Define a largura dos itens flutuantes como 45% do contêiner */
+    margin: 2.5%;
+    /* Define uma margem de 2.5% ao redor dos itens flutuantes */
+    background-color: #ff9800;
+    /* Define a cor de fundo dos itens flutuantes como laranja */
+    color: white;
+    /* Define a cor do texto dos itens flutuantes como branco */
+    padding: 20px;
+    /* Define um padding de 20 pixels dentro dos itens flutuantes */
+    text-align: center;
+    /* Centraliza o texto dentro dos itens flutuantes */
+    float: left;
+    /* Faz com que os itens flutuem à esquerda dentro do contêiner */
+    border-radius: 4px;
+    /* Adiciona bordas arredondadas de 4 pixels aos itens flutuantes */
+}

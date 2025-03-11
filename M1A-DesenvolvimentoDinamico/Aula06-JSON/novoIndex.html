@@ -1,0 +1,10 @@
+<html>
+<body>
+    <pre id="json"></pre>
+    <script>
+        const jsonObject = { "name": "John", "age": 30, "city": "New York" };
+        const formattedJson = JSON.stringify(jsonObject, null, 4);
+        document.getElementById("json").textContent = formattedJson;
+    </script>
+</body>
+</html>

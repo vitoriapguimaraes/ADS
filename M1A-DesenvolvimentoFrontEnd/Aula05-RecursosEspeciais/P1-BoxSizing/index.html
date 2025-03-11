@@ -1,0 +1,29 @@
+<!--
+    A principal diferença entre box-sizing: content-box e box-sizing: border-box é como a largura e a altura de um elemento são calculadas em relação ao conteúdo, ao padding e à borda.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Exemplo de Box Sizing</title>
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplo de Box Sizing</h1>
+
+        <!-- Caixa com box-sizing padrão (content-box) -->
+        <div class="box content-box">
+            <p>Box Sizing: Content-box</p>
+        </div>
+
+        <!-- Caixa com box-sizing border-box -->
+        <div class="box border-box">
+            <p>Box Sizing: Border-box</p>
+        </div>
+    </div>
+</body>
+</html>

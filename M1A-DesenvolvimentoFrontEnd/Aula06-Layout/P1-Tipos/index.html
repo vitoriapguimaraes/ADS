@@ -1,0 +1,80 @@
+<!-- 
+    Layout é a forma como os elementos são organizados e dispostos em uma página ou tela. 
+    É como se você estivesse arrumando objetos em uma mesa de forma que tudo ficasse bonito e fácil de encontrar.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Declaração do tipo de documento (HTML5) e define o idioma da página como inglês -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para garantir que a página seja responsiva em dispositivos móveis -->
+    <title>Layout Examples</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vincula um arquivo CSS externo chamado "styles.css" para estilizar a página -->
+</head>
+
+<body>
+    <!-- Corpo da página, onde o conteúdo principal é inserido -->
+    <header>
+        <!-- Cabeçalho da página -->
+        <h1>Layout Examples</h1>
+        <!-- Título principal da página -->
+    </header>
+    <section class="grid-layout"> <!-- A class facilita a aplicação de estilos no CSS -->
+        <!-- Seção da página usando um layout de grade (grid) -->
+        <h2>Grid Layout</h2>
+        <!-- Subtítulo para a seção de layout de grade -->
+        <div class="grid-container"> <!-- div é utilizada para agrupar elementos e aplicar um estilo aos mesmos -->
+            <!-- Contêiner principal para os itens de grade -->
+            <div class="grid-item">Item 1</div>
+            <!-- Item 1 na grade -->
+            <div class="grid-item">Item 2</div>
+            <!-- Item 2 na grade -->
+            <div class="grid-item">Item 3</div>
+            <!-- Item 3 na grade -->
+            <div class="grid-item">Item 4</div>
+            <!-- Item 4 na grade -->
+        </div>
+    </section>
+    <section class="flex-layout"> <!-- A class facilita a aplicação de estilos no CSS -->
+        <!-- Seção da página usando um layout flexível (flexbox) -->
+        <h2>Flexbox Layout</h2>
+        <!-- Subtítulo para a seção de layout flexível -->
+        <div class="flex-container"> <!-- div é utilizada para agrupar elementos e aplicar um estilo aos mesmos -->
+            <!-- Contêiner principal para os itens flexíveis -->
+            <div class="flex-item">Item 1</div>
+            <!-- Item 1 no layout flexível -->
+            <div class="flex-item">Item 2</div>
+            <!-- Item 2 no layout flexível -->
+            <div class="flex-item">Item 3</div>
+            <!-- Item 3 no layout flexível -->
+            <div class="flex-item">Item 4</div>
+            <!-- Item 4 no layout flexível -->
+        </div>
+    </section>
+    <section class="float-layout"> <!-- A class facilita a aplicação de estilos no CSS -->
+        <!-- Seção da página usando um layout com float -->
+        <h2>Float Layout</h2>
+        <!-- Subtítulo para a seção de layout com float -->
+        <div class="float-container"> <!-- div é utilizada para agrupar elementos e aplicar um estilo aos mesmos -->
+            <!-- Contêiner principal para os itens com float -->
+            <div class="float-item">Item 1</div>
+            <!-- Item 1 no layout com float -->
+            <div class="float-item">Item 2</div>
+            <!-- Item 2 no layout com float -->
+            <div class="float-item">Item 3</div>
+            <!-- Item 3 no layout com float -->
+            <div class="float-item">Item 4</div>
+            <!-- Item 4 no layout com float -->
+        </div>
+    </section>
+</body>
+<!-- Fim do corpo da página -->
+
+</html>
+<!-- Fim do documento HTML -->

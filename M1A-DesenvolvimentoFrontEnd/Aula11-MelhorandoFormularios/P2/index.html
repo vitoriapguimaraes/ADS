@@ -1,0 +1,49 @@
+<!--
+    CONCEITO
+
+    Um formulário é uma área em uma página web onde os usuários podem inserir dados e depois enviá-los para um servidor. 
+    Os formulários são usados para coisas como logins, registros, buscas e muito mais.
+
+    Submeter um formulário significa enviar os dados que o usuário inseriu para um servidor para processamento. 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Definindo o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o site responsivo -->
+    <title>Exemplo de Submissão de Formulário</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+
+        <!-- Formulário para submissão -->
+        <!--
+            <form>: O elemento form é usado para criar um formulário. 
+            O atributo action especifica a URL para a qual os dados do formulário serão enviados. 
+            O atributo method especifica o método de envio, que pode ser GET ou POST. 
+            Neste exemplo, usamos POST para enviar os dados de forma oculta.
+
+            <button>: O elemento button com type="submit" é usado para criar um botão que envia os dados do formulário.
+        -->
+        <form action="/pagina-de-destino" method="POST">
+            <!-- Campo de texto para o nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            
+            <!-- Campo de email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+            
+            <!-- Área de texto para a mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+            
+            <!-- Botão para enviar o formulário -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

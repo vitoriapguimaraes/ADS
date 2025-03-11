@@ -1,0 +1,60 @@
+<!--
+    CONCEITO
+
+    Uma tabela é uma estrutura usada para organizar dados em linhas e colunas. 
+    No HTML, usamos várias tags para criar tabelas, como <table>, <tr>, <td>, e <th>.
+
+    Propriedades
+        Propriedades geralmente referem-se aos estilos e comportamentos dos elementos HTML, que são definidos via CSS ou manipulados via JavaScript.
+        Eles controlam como os elementos são exibidos e interagem na página, e podem ser ajustados dinamicamente.
+
+        border, width, height, margin, border-spacing, padding, text-align são propriedades CSS que controlam o estilo da tabela.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Define o conjunto de caracteres como UTF-8 -->
+  <meta charset="UTF-8">
+  <!-- Configura o viewport para garantir que a página seja responsiva -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Define o título da página -->
+  <title>Exemplo de Tabela com Atributos e Propriedades</title>
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho principal da página -->
+  <h1>Exemplo de Tabela com Atributos e Propriedades</h1>
+
+  <!-- Tabela com atributos HTML e classe CSS -->
+  <table class="minha-tabela" border="1" cellpadding="10" cellspacing="5">
+    <!-- Linha de cabeçalho da tabela -->
+    <tr>
+      <!-- Célula de cabeçalho que se estende por 2 colunas -->
+      <th colspan="2">Informações Pessoais</th>
+    </tr>
+    <!-- Segunda linha do cabeçalho da tabela -->
+    <tr>
+      <!-- Célula de cabeçalho para "Nome" -->
+      <th>Nome</th>
+      <!-- Célula de cabeçalho para "Idade" -->
+      <th>Idade</th>
+    </tr>
+    <!-- Primeira linha de dados da tabela -->
+    <tr>
+      <!-- Célula de dados para o nome "Ana" -->
+      <td>Ana</td>
+      <!-- Célula de dados para a idade "25" -->
+      <td>25</td>
+    </tr>
+    <!-- Segunda linha de dados da tabela -->
+    <tr>
+      <!-- Célula de dados para o nome "Carlos" -->
+      <td>Carlos</td>
+      <!-- Célula de dados para a idade "30" -->
+      <td>30</td>
+    </tr>
+  </table>
+</body>
+</html>

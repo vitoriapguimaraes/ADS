@@ -1,0 +1,62 @@
+/* Estilizando o corpo (body) da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    margin: 0; /* Removendo margem padrão */
+    padding: 20px; /* Adicionando padding ao redor */
+    background-color: #f4f4f4; /* Cor de fundo */
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centralizando horizontalmente */
+    align-items: center; /* Centralizando verticalmente */
+    min-height: 100vh; /* Altura mínima da tela inteira */
+}
+
+/* Estilizando o contêiner principal */
+.container {
+    text-align: center; /* Centralizando o texto */
+    background-color: white; /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+    max-width: 500px; /* Largura máxima */
+    width: 100%; /* Largura total */
+}
+
+/* Estilizando os cabeçalhos dentro do contêiner */
+h1, h2 {
+    color: #333; /* Cor do texto */
+}
+
+/* Estilizando os rótulos (labels) */
+label {
+    display: block; /* Cada label ocupa uma linha inteira */
+    margin-top: 10px; /* Espaçamento acima */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilizando os campos de entrada (input) */
+input[type="text"] {
+    width: 100%; /* Largura total do elemento pai */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 5px; /* Espaçamento acima */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilizando os botões */
+button {
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+/* Estilizando o botão ao passar o mouse */
+button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}

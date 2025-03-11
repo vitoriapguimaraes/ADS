@@ -1,0 +1,110 @@
+body {
+    /* Define a fonte do texto como Arial. Se Arial não estiver disponível, usa uma fonte genérica sans-serif */
+    font-family: Arial, sans-serif;
+    /* Remove as margens padrão do navegador */
+    margin: 0;
+    /* Adiciona um preenchimento de 20px ao redor do conteúdo */
+    padding: 20px;
+    /* Define a cor de fundo da página como um cinza claro */
+    background-color: #f4f4f4;
+    /* Usa o modelo de layout Flexbox para organizar os elementos filhos */
+    display: flex;
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    align-items: center;
+    /* Define a altura mínima do corpo para ocupar toda a altura da janela */
+    min-height: 100vh;
+}
+
+.container {
+    /* Usa o modelo de layout Grid para organizar os elementos filhos */
+    display: grid;
+    /* Define o layout das colunas do grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Define o espaçamento entre os itens do grid */
+    gap: 20px;
+    /* Define a largura do contêiner como 80% da largura da janela */
+    width: 80%;
+}
+
+.border-example {
+    /* Define a cor de fundo do contêiner como branca */
+    background-color: white;
+    /* Adiciona um preenchimento interno de 20 pixels ao contêiner */
+    padding: 20px;
+    /* Centraliza o texto dentro do contêiner */
+    text-align: center;
+    /* Adiciona uma sombra sutil ao redor do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para borda sólida */
+.solid-border {
+    /* Define uma borda sólida de 3px de espessura e cor verde */
+    border: 3px solid #4CAF50;
+}
+
+/* Estilo para borda pontilhada */
+.dotted-border {
+    /* Define uma borda pontilhada de 3px de espessura e cor azul */
+    border: 3px dotted #2196F3;
+}
+
+/* Estilo para borda tracejada */
+.dashed-border {
+    /* Define uma borda tracejada de 3px de espessura e cor laranja */
+    border: 3px dashed #FF9800;
+}
+
+/* Estilo para borda dupla */
+.double-border {
+    /* Define uma borda dupla de 3px de espessura e cor roxa */
+    border: 3px double #9C27B0;
+}
+
+/* Estilo para borda em relevo (groove) */
+.groove-border {
+    /* Define uma borda em relevo de 3px de espessura e cor marrom */
+    border: 3px groove #795548;
+}
+
+/* Estilo para borda em crista (ridge) */
+.ridge-border {
+    /* Define uma borda em crista de 3px de espessura e cor amarela */
+    border: 3px ridge #FFEB3B;
+}
+
+/* Estilo para borda embutida (inset) */
+.inset-border {
+    /* Define uma borda embutida de 3px de espessura e cor cinza */
+    border: 3px inset #607D8B;
+}
+
+/* Estilo para borda saliente (outset) */
+.outset-border {
+    /* Define uma borda saliente de 3px de espessura e cor vermelha */
+    border: 3px outset #F44336;
+}
+
+/* Estilo para borda arredondada */
+.rounded-border {
+    /* Define uma borda sólida de 3px de espessura e cor rosa */
+    border: 3px solid #E91E63;
+    /* Arredonda os cantos da borda */
+    border-radius: 15px;
+}
+
+/* Estilo para borda complexa */
+.complex-border {
+    /* Define uma borda superior sólida de 5px de espessura e cor roxa */
+    border-top: 5px solid #673AB7;
+    /* Define uma borda direita tracejada de 5px de espessura e cor amarela */
+    border-right: 5px dashed #FFC107;
+    /* Define uma borda inferior pontilhada de 5px de espessura e cor verde água */
+    border-bottom: 5px dotted #009688;
+    /* Define uma borda esquerda dupla de 5px de espessura e cor azul clara */
+    border-left: 5px double #03A9F4;
+    /* Arredonda os cantos da borda */
+    border-radius: 15px;
+}

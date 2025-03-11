@@ -1,0 +1,43 @@
+body,
+html {
+    height: 100%;
+    /* Define a altura de body e html para 100% da altura da janela */
+    margin: 0;
+    /* Remove as margens padrão de body e html */
+    display: flex;
+    /* Define o layout de body e html como flexbox */
+    align-items: center;
+    /* Alinha os itens (conteúdo) verticalmente ao centro */
+    justify-content: center;
+    /* Alinha os itens (conteúdo) horizontalmente ao centro */
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão para Arial, com fallback para sans-serif */
+    background-color: #f0f0f0;
+    /* Define a cor de fundo de body e html como cinza claro */
+}
+
+.centered-container {
+    display: flex;
+    /* Define o layout do contêiner como flexbox */
+    align-items: center;
+    /* Alinha os itens (conteúdo) dentro do contêiner verticalmente ao centro */
+    justify-content: center;
+    /* Alinha os itens (conteúdo) dentro do contêiner horizontalmente ao centro */
+    width: 80%;
+    /* Define a largura do contêiner como 80% da largura da janela */
+    height: 80%;
+    /* Define a altura do contêiner como 80% da altura da janela */
+    background-color: #fff;
+    /* Define a cor de fundo do contêiner como branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra ao redor do contêiner para dar um efeito de profundidade */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas de 10 pixels ao contêiner */
+    text-align: center;
+    /* Centraliza o texto dentro do contêiner */
+}
+
+.content {
+    padding: 20px;
+    /* Adiciona um padding de 20 pixels ao redor do conteúdo */
+}

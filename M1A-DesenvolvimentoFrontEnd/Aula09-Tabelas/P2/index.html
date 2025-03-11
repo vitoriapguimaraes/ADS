@@ -1,0 +1,59 @@
+<!--
+    CONCEITO
+
+    Uma tabela é uma estrutura usada para organizar dados em linhas e colunas. 
+    No HTML, usamos várias tags para criar tabelas, como <table>, <tr>, <td>, e <th>.
+
+    Atributos
+        Atributos são usados no código HTML para definir características dos elementos HTML.
+        Eles são escritos diretamente na tag do elemento e afetam a forma como o navegador renderiza o elemento na página.
+
+        border, cellpadding, e cellspacing são atributos da tag <table>
+
+        1.border: Adiciona bordas à tabela.
+        2.colspan: Permite que uma célula se estenda por várias colunas.
+        3.rowspan: Permite que uma célula se estenda por várias linhas.
+        
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Tabela com Atributos</title>
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Exemplo de Tabela com Atributos</h1>
+
+  <!-- Tabela com diversos atributos -->
+  <table class="minha-tabela">
+    <tr>
+      <!-- Célula que se estende por 3 colunas -->
+      <th colspan="3">Informações Pessoais</th>
+    </tr>
+    <tr>
+      <!-- Célula que se estende por 2 linhas -->
+      <th rowspan="2">Nome</th>
+      <th>Idade</th>
+      <th>Cidade</th>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>São Paulo</td>
+    </tr>
+    <tr>
+      <td>Carlos</td>
+      <td>30</td>
+      <td>Rio de Janeiro</td>
+    </tr>
+    <tr>
+      <td>Maria</td>
+      <td>22</td>
+      <td>Belo Horizonte</td>
+    </tr>
+  </table>
+</body>
+</html>
