@@ -1,7 +1,14 @@
-# 📚 Estudos - Análise e Desenvolvimento de Sistemas | Faculdade Descomplica
-Este repositório contém meus materiais de estudo, exercícios e projetos desenvolvidos ao longo do curso de Análise e Desenvolvimento de Sistemas na Faculdade Descomplica.
+# Estudos - Análise e Desenvolvimento de Sistemas
 
-## Conteúdo
+## Descrição
+Bem-vindo(a) ao meu repositório de estudos! Aqui você encontrará materiais, exercícios e projetos desenvolvidos ao longo do curso de Análise e Desenvolvimento de Sistemas na Faculdade Descomplica.
+
+📈 Este repositório será atualizado conforme avanço no curso.
+
+🔗 Material original da Faculdade Descomplica: 
+[GitHub Oficial](https://github.com/FaculdadeDescomplica)
+
+### Conteúdos:
 - Códigos e exercícios das disciplinas
 - Projetos acadêmicos e práticos
 - Anotações e resumos
@@ -11,8 +18,70 @@ Este repositório contém meus materiais de estudo, exercícios e projetos desen
 - Linguagens: JavaScript, HTML, CSS
 - Ferramentas: VSCode, Git/GitHub
 
-<br>
+## Disciplinas
+```
+Progress bar: [#####.............................................]
+```
 
-Este repositório será atualizado conforme avanço no curso. 📈✨
+```
+ADS
+|
+├── Basic Frontend
+|   ├── Desenvolvimento FrontEnd
+|   ├── Desenvolvimento Dinâmico
+|   └── Experiência do Usuário
+|
+├── Programmer
+|   ├── Empreendedorismo e Criação de Novos Negócios
+|   └── Lógica de Porgramação
+|
+├── Object-Oriented Developer
+|   ├── Design de Software
+|   ├── Programação I
+|   └── Estruturas de Dados para Sistemas Inteligentes
+|
+├── BackEnd Developer
+|   ├── Modelagem de Banco de Dados
+|   └── Prática Integradora em Desenvolvimento
+|
+├── FrontEnd Developer
+|   ├── Programação II
+|   ├── Arquitetura de Computadores do Século XXI
+|   └── Desenvolvimento Mobile
+|
+├── Full Stack Developer
+|   ├── Framework
+|   └── Prática Integradora de Apps
+|
+├── Devops Strategist
+|   ├── Cloud Computing
+|   ├── Devops I
+|   └── Devops II
+|
+├── Full Cycle Developer
+|   ├── Monitoramento
+|   └── Prática Integradora na Nuvem
+|
+├── Smart Manager
+|   ├── Metodologia Ágil
+|   ├── Segurança Tecnológica
+|   └── Compliance
+|
+└── Advanced Tester
+    ├── Testes
+    └── Prática Integradora com Métodos Ágeis
+```
+
+<br>
+<hr> 
+
+### Currículos e Documentos
+Acesse os arquivos disponíveis na pasta 
+[![Documentos](https://img.shields.io/badge/DOCUMENTOS-%F0%9F%93%83-blue?style=flat-square)](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações.
+
+<!-- 
+[##################################################]
 
 ![Lista das disciplinas](https://github.com/vitoriapguimaraes/vitoriapguimaraes/blob/main/image/ADS-Disciplinas.png)
+-->
+
