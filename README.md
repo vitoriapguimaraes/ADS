@@ -3,10 +3,10 @@
 ## Descrição
 Bem-vindo(a) ao meu repositório de estudos! Aqui você encontrará materiais, exercícios e projetos desenvolvidos ao longo do curso de Análise e Desenvolvimento de Sistemas na Faculdade Descomplica.
 
-📈 Este repositório será atualizado conforme avanço no curso.
-
-🔗 Material original da Faculdade Descomplica: 
-[GitHub Oficial](https://github.com/FaculdadeDescomplica)
+> Este repositório será atualizado conforme avanço no curso.
+>
+> 🔗 Material original da Faculdade Descomplica:
+> [GitHub Oficial Descomplica](https://github.com/FaculdadeDescomplica)
 
 ### Conteúdos:
 - Códigos e exercícios das disciplinas
@@ -19,6 +19,7 @@ Bem-vindo(a) ao meu repositório de estudos! Aqui você encontrará materiais, e
 - Ferramentas: VSCode, Git/GitHub
 
 ## Disciplinas
+
 ```
 Progress bar: [#####.............................................]
 ```
@@ -76,12 +77,4 @@ ADS
 <hr> 
 
 ### Currículos e Documentos
-Acesse os arquivos disponíveis na pasta 
-[![Documentos](https://img.shields.io/badge/DOCUMENTOS-%F0%9F%93%83-blue?style=flat-square)](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações.
-
-<!-- 
-[##################################################]
-
-![Lista das disciplinas](https://github.com/vitoriapguimaraes/vitoriapguimaraes/blob/main/image/ADS-Disciplinas.png)
--->
-
+Acesse os arquivos disponíveis na [Pasta Documentos](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações.
