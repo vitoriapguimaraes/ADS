@@ -21,7 +21,7 @@ Bem-vindo(a) ao meu repositório de estudos! Aqui você encontrará materiais, e
 ## Disciplinas
 
 ```
-Progress bar: [#####.............................................]
+Progress bar: [##########........................................]
 ```
 
 ```
