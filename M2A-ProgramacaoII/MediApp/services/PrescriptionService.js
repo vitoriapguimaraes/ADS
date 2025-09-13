@@ -1,140 +1,85 @@
-import express from "express";
-import PrescriptionService from "../services/PrescriptionService.js";
-import multer from "multer";
-import process from "process";
-import path from "path";
+import PrescriptionRepository from "../repositories/PrescriptionRepository.js";
+import AppointmentService from "../services/AppointmentService.js";
+import PacientService from "../services/PacientService.js";
+import DoctorService from "../services/DoctorService.js";
+import fs from "fs";
+import PDFDocument from "pdfkit";
 
-let router = express.Router();
+const getAllPrescriptions = async () => {
+  return await PrescriptionRepository.getAllPrescriptions();
+};
 
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "./MediApp/prescriptions/");
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname);
-  },
-});
+const getPrescription = async (id) => {
+  return await PrescriptionRepository.getPrescription(id);
+};
 
-const upload = multer({ storage: storage });
+const savePrescription = async ({
+  date,
+  appointmentId,
+  medicine,
+  dosage,
+  instructions,
+}) => {
+  return await PrescriptionRepository.savePrescription({
+    date,
+    appointmentId,
+    medicine,
+    dosage,
+    instructions,
+  });
+};
 
-router.post(
-  "/uploadPrescription/:id",
-  upload.single("file"),
-  async (req, res) => {
-    try {
-      const { id } = req.params;
-      let prescription = await PrescriptionService.getPrescription(id);
+const updatePrescription = async (
+  id,
+  { date, appointmentId, medicine, dosage, instructions, file }
+) => {
+  return await PrescriptionRepository.updatePrescription(id, {
+    date,
+    appointmentId,
+    medicine,
+    dosage,
+    instructions,
+    file,
+  });
+};
 
-      const file = "./MediApp/src/prescriptions/" + req.file.originalname;
-      prescription = await PrescriptionService.updatePrescription(id, { file });
+const deletePrescription = async (id) => {
+  return await PrescriptionRepository.deletePrescription(id);
+};
 
-      return res.status(200).send(prescription);
-    } catch (error) {
-      console.error(error);
-      res.status(500).send(error);
-    }
-  }
-);
+const generatePrescriptionFile = async (prescription) => {
+  const appointment = await AppointmentService.getAppointment(
+    prescription.appointmentId
+  );
+  const pacient = await PacientService.getPacient(appointment.pacientId);
+  const doctor = await DoctorService.getDoctor(appointment.doctorId);
 
-router.get("/readPrescription/:id", async (req, res) => {
-  const { id } = req.params;
+  const id = prescription._id;
+  const document = new PDFDocument({ font: "Courier" });
+  const filePath = "./prescriptions/" + id + ".pdf";
 
-  try {
-    const prescription = await PrescriptionService.getPrescription(id);
-    let filePath = path.resolve(process.cwd() + "/../" + prescription.file);
-    res.status(200).sendFile(filePath);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send(error);
-  }
-});
+  document.pipe(fs.createWriteStream(filePath));
+  document.fontSize(16).text("Pacient Name: " + pacient.name);
+  document.fontSize(16).text("Doctor Name: " + doctor.name);
 
-router.get("/prescriptions", async (req, res) => {
-  try {
-    const prescriptions = await PrescriptionService.getAllPrescriptions();
-    res.send(prescriptions);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send(error);
-  }
-});
+  const recipe = "Medicine: " + prescription.medicine;
+  document.fontSize(12).text(recipe);
 
-router.get("/getPrescription/:id", async (req, res) => {
-  const { id } = req.params;
-  try {
-    const prescription = await PrescriptionService.getPrescription(id);
-    res.send(prescription);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send(error);
-  }
-});
+  document.fontSize(12).text("Dose: " + prescription.dosage);
+  document.fontSize(12).text("Instructions: " + prescription.instructions);
 
-router.post("/postPrescription", async function (req, res) {
-  const { date, appointmentId, medicine, dosage, instructions } = req.body;
-  try {
-    const prescription = await PrescriptionService.savePrescription({
-      date,
-      appointmentId,
-      medicine,
-      dosage,
-      instructions,
-    });
-    res.send(prescription);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send(error);
-  }
-});
+  document.end();
 
-router.put("/prescriptions/:id", async (req, res) => {
-  const { id } = req.params;
-  const { date, appointmentId, medicine, dosage, instructions } = req.body;
+  return prescription;
+};
 
-  try {
-    const prescription = await PrescriptionService.updatePrescription(id, {
-      date,
-      appointmentId,
-      medicine,
-      dosage,
-      instructions,
-    });
-    res.send(prescription);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send(error);
-  }
-});
+const prescriptionService = {
+  getAllPrescriptions,
+  getPrescription,
+  savePrescription,
+  updatePrescription,
+  deletePrescription,
+  generatePrescriptionFile,
+};
 
-router.delete("/prescriptions/:id", async (req, res) => {
-  const { id } = req.params;
-
-  try {
-    const prescription = await PrescriptionService.deletePrescription(id);
-    res.send(prescription);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send(error);
-  }
-});
-
-router.get("/generatePrescription/:id", async (req, res) => {
-  const { id } = req.params;
-  try {
-    const prescription = await PrescriptionService.getPrescription(id);
-    let generatedPrescription =
-      await PrescriptionService.generatePrescriptionFile(prescription);
-
-    const file = "./src/prescriptions/" + id + ".pdf";
-    generatedPrescription = await PrescriptionService.updatePrescription(id, {
-      file,
-    });
-
-    res.send(generatedPrescription);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send(error);
-  }
-});
-
-export default router;
+export default prescriptionService;
