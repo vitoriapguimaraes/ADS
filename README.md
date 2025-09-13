@@ -31,26 +31,26 @@ Progress bar:
 ```
 ADS
 |
-├── :ballot_box_with_check: Basic Frontend
-|   ├── :ballot_box_with_check: Desenvolvimento FrontEnd
-|   ├── :ballot_box_with_check: Desenvolvimento Dinâmico
-|   └── :ballot_box_with_check: Experiência do Usuário
+├── Basic Frontend
+|   ├── ✅ Desenvolvimento FrontEnd
+|   ├── ✅ Desenvolvimento Dinâmico
+|   └── ✅ Experiência do Usuário
 |
-├── :ballot_box_with_check: Programmer
-|   ├── :ballot_box_with_check: Empreendedorismo e Criação de Novos Negócios
-|   └── :ballot_box_with_check: Lógica de Porgramação
+├── Programmer
+|   ├── ✅ Empreendedorismo e Criação de Novos Negócios
+|   └── ✅ Lógica de Porgramação
 |
-├── :ballot_box_with_check: Object-Oriented Developer
-|   ├── :ballot_box_with_check: Design de Software
-|   ├── :ballot_box_with_check: Programação I
-|   └── :ballot_box_with_check: Estruturas de Dados para Sistemas Inteligentes
+├── Object-Oriented Developer
+|   ├── ✅ Design de Software
+|   ├── ✅ Programação I
+|   └── ✅ Estruturas de Dados para Sistemas Inteligentes
 |
 ├── BackEnd Developer
 |   ├── Modelagem de Banco de Dados
 |   └── Prática Integradora em Desenvolvimento
 |
 ├── FrontEnd Developer
-|   ├── :ballot_box_with_check: Programação II
+|   ├── ✅ Programação II
 |   ├── Arquitetura de Computadores do Século XXI
 |   └── Desenvolvimento Mobile
 |
