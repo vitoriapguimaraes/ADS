@@ -52,13 +52,13 @@ ADS
 |   └── ✅ Estruturas de Dados para Sistemas Inteligentes
 |
 ├── BackEnd Developer
-|   ├── :ballot_box_with_check: Modelagem de Banco de Dados
-|   └── :ballot_box_with_check: Prática Integradora em Desenvolvimento
+|   ├── ✅ Modelagem de Banco de Dados
+|   └── ✅ Prática Integradora em Desenvolvimento
 |
 ├── FrontEnd Developer
-|   ├── :ballot_box_with_check: Programação II
-|   ├── :ballot_box_with_check: Arquitetura de Computadores do Século XXI
-|   └── :ballot_box_with_check: Desenvolvimento Mobile
+|   ├── ✅ Programação II
+|   ├── ✅ Arquitetura de Computadores do Século XXI
+|   └── ✅ Desenvolvimento Mobile
 |
 ├── Full Stack Developer
 |   ├── Framework
