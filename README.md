@@ -1,6 +1,7 @@
 # Estudos - Análise e Desenvolvimento de Sistemas
 
 ## Descrição
+
 Bem-vindo(a) ao meu repositório de estudos! Aqui você encontrará materiais, exercícios e projetos desenvolvidos ao longo do curso de Análise e Desenvolvimento de Sistemas na Faculdade Descomplica.
 
 > Este repositório será atualizado conforme avanço no curso.
@@ -9,12 +10,14 @@ Bem-vindo(a) ao meu repositório de estudos! Aqui você encontrará materiais, e
 > [GitHub Oficial Descomplica](https://github.com/FaculdadeDescomplica)
 
 ### Conteúdos:
+
 - Códigos e exercícios das disciplinas
 - Projetos acadêmicos e práticos
 - Anotações e resumos
 - Estudos complementares
 
 ## Tecnologias e Ferramentas
+
 - Linguagens: JavaScript, HTML, CSS
 - Ferramentas: VSCode, Git/GitHub
 
@@ -26,6 +29,9 @@ Progress bar:
 [#####.............................................]
 [##########........................................]
 [###############...................................]
+[####################..............................]
+[#########################.........................]
+
 ```
 
 ```
@@ -46,13 +52,13 @@ ADS
 |   └── ✅ Estruturas de Dados para Sistemas Inteligentes
 |
 ├── BackEnd Developer
-|   ├── Modelagem de Banco de Dados
-|   └── Prática Integradora em Desenvolvimento
+|   ├── :ballot_box_with_check: Modelagem de Banco de Dados
+|   └── :ballot_box_with_check: Prática Integradora em Desenvolvimento
 |
 ├── FrontEnd Developer
-|   ├── ✅ Programação II
-|   ├── Arquitetura de Computadores do Século XXI
-|   └── Desenvolvimento Mobile
+|   ├── :ballot_box_with_check: Programação II
+|   ├── :ballot_box_with_check: Arquitetura de Computadores do Século XXI
+|   └── :ballot_box_with_check: Desenvolvimento Mobile
 |
 ├── Full Stack Developer
 |   ├── Framework
@@ -78,7 +84,8 @@ ADS
 ```
 
 <br>
-<hr> 
+<hr>
 
 ### Currículos e Documentos
+
 Acesse os arquivos disponíveis na [Pasta Documentos](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações.
