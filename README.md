@@ -30,6 +30,8 @@ Progress bar:
 [##########........................................]
 [###############...................................]
 [####################..............................]
+[#########################.........................]
+
 ```
 
 ```
@@ -55,8 +57,8 @@ ADS
 |
 ├── FrontEnd Developer
 |   ├── :ballot_box_with_check: Programação II
-|   ├── Arquitetura de Computadores do Século XXI
-|   └── Desenvolvimento Mobile
+|   ├── :ballot_box_with_check: Arquitetura de Computadores do Século XXI
+|   └── :ballot_box_with_check: Desenvolvimento Mobile
 |
 ├── Full Stack Developer
 |   ├── Framework
