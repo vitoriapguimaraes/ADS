@@ -31,6 +31,7 @@ Progress bar:
 [###############...................................]
 [####################..............................]
 [#########################.........................]
+[##############################....................]
 
 ```
 
@@ -61,8 +62,8 @@ ADS
 |   └── ✅ Desenvolvimento Mobile
 |
 ├── Full Stack Developer
-|   ├── Framework
-|   └── Prática Integradora de Apps
+|   ├── ✅ Framework
+|   └── ✅ Prática Integradora de Apps
 |
 ├── Devops Strategist
 |   ├── Cloud Computing
