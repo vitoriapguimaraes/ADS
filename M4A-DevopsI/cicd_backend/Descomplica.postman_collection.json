@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "7de212a4-bd94-4142-9e63-126e055ab71b",
+		"name": "Descomplica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1643164"
+	},
+	"item": [
+		{
+			"name": "SpringBoot - POST - artistas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Red Hot Chili Peppers\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/artistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"artistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - PUT - artistas/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Red Hot Chili Peppers\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/artistas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"artistas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - GET - artistas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/artistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"artistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - GET - artistas/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/artistas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"artistas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - DELETE - artistas/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/artistas/41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"artistas",
+						"41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - POST - albuns",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Californicationmnnn\",\r\n    \"ano\": 1999,\r\n    \"idArtista\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/albuns",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"albuns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - PUT - albuns/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Californicationzzzz\",\r\n    \"ano\": 1999,\r\n    \"idArtista\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/albuns/41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"albuns",
+						"41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - GET - albuns",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/albuns",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"albuns"
+					],
+					"query": [
+						{
+							"key": "idArtista",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - GET - albuns/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/albuns/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"albuns",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - DELETE - albuns/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/albuns/41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"albuns",
+						"41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - POST - musicas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Around the World\",\r\n    \"duracao\":3.59,\r\n    \"idAlbum\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/musicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"musicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - PUT - musicas/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Around the Worldszzzzz\",\r\n    \"duracao\":3.59,\r\n    \"idAlbum\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/musicas/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"musicas",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - GET - musicas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/musicas?idAlbum=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"musicas"
+					],
+					"query": [
+						{
+							"key": "idAlbum",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - GET - musicas/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/musicas/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"musicas",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SpringBoot - DELETE - musicas/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/musicas/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"musicas",
+						"21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
