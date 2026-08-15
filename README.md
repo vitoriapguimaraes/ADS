@@ -9,7 +9,7 @@ Bem-vindo(a) ao meu repositório de estudos! Aqui você encontrará materiais, e
 > 🔗 Material original da Faculdade Descomplica:
 > [GitHub Oficial Descomplica](https://github.com/FaculdadeDescomplica)
 
-### Conteúdos:
+### Conteúdos
 
 - Códigos e exercícios das disciplinas
 - Projetos acadêmicos e práticos
@@ -23,7 +23,7 @@ Bem-vindo(a) ao meu repositório de estudos! Aqui você encontrará materiais, e
 
 ## Disciplinas
 
-```
+```badh
 Progress bar:
 [..................................................]
 [#####.............................................]
@@ -31,10 +31,10 @@ Progress bar:
 [###############...................................]
 [####################..............................]
 [#########################.........................]
-
+[##############################....................]
 ```
 
-```
+```bash
 ADS
 |
 ├── Basic Frontend
@@ -61,8 +61,8 @@ ADS
 |   └── ✅ Desenvolvimento Mobile
 |
 ├── Full Stack Developer
-|   ├── Framework
-|   └── Prática Integradora de Apps
+|   ├── ✅ Framework
+|   └── ✅ Prática Integradora de Apps
 |
 ├── Devops Strategist
 |   ├── Cloud Computing
@@ -83,8 +83,7 @@ ADS
     └── Prática Integradora com Métodos Ágeis
 ```
 
-<br>
-<hr>
+---
 
 ### Currículos e Documentos
 
