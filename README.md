@@ -117,4 +117,4 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## About Me
 
-Learn more about my qualifications and certifications in my [Documents Folder](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) on my main profile.
+Learn more about my qualifications and certifications in my [Documents Folder](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/doc) on my main profile.
